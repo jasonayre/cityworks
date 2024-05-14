@@ -1,0 +1,62 @@
+{
+  "Discipline": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Discipline/Add",
+      "params": [
+        {
+          "name": "DisciplineCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DisciplineDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectorId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "All": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Discipline/All",
+      "params": [
+
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Discipline/Update",
+      "params": [
+        {
+          "name": "DisciplineDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DisciplineId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectorId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

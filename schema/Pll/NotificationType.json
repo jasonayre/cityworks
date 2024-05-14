@@ -1,0 +1,39 @@
+{
+  "NotificationType": {
+    "GetNotificationTypeList": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/NotificationType/GetNotificationTypeList",
+      "params": [
+        {
+          "name": "Limit",
+          "type": "Int32",
+          "required": false,
+          "comments": "Maximum number of records to return"
+        },
+        {
+          "name": "Offset",
+          "type": "Int32",
+          "required": false,
+          "comments": "Number of items to bypass before returning the remaining items."
+        },
+        {
+          "name": "SortDir",
+          "type": "Int32",
+          "required": false,
+          "comments": "ASC = 0, DESC = 1"
+        },
+        {
+          "name": "SortField",
+          "type": "String",
+          "required": false,
+          "comments": "Use comma delimited string for multiple sort fields."
+        },
+        {
+          "name": "WhereClause",
+          "type": "List<FilterCondition>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

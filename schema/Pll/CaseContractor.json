@@ -1,0 +1,227 @@
+{
+  "CaseContractor": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseContractor/Add",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CompanyEmployeeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorCompanyId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorTypeId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LicenseId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseContractor/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseContractor/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseContractor/Search",
+      "params": [
+        {
+          "name": "BusinessName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaContractorId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorCompanyId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FirstName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LicenseId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LicenseNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WcLiabilityCompany",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseContractor/SearchObject",
+      "params": [
+        {
+          "name": "BusinessName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaContractorId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorCompanyId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FirstName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LicenseId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LicenseNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WcLiabilityCompany",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "CaseInstrument": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInstrument/Add",
+      "params": [
+        {
+          "name": "AddressLine1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressLine2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Amount",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Company",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactEmail",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateExpire",
+          "type": "DateTime",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EffectiveDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InstTypeId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IssueDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SerialNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInstrument/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInstrument/Delete",
+      "params": [
+        {
+          "name": "CaInstrumentId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInstrument/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "GetList": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInstrument/GetList",
+      "params": [
+        {
+          "name": "FilterColumn",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FilterOperator",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FilterValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupBy",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HavingCondition",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PageNumber",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PageSize",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SingleRecordFlag",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SortColumn",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SortDirection",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WhereClause",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInstrument/Search",
+      "params": [
+        {
+          "name": "AddressLine1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Amount",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaInstrumentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Company",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactEmail",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InstTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SerialNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

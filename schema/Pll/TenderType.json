@@ -1,0 +1,152 @@
+{
+  "TenderType": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/TenderType/Add",
+      "params": [
+        {
+          "name": "AccountCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AnonymousFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OverPaymentFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentGatewayFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentGatewayId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RegisteredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TableName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TenderDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TenderType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/TenderType/Update",
+      "params": [
+        {
+          "name": "AccountCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AnonymousFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OverPaymentFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentGatewayFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentGatewayId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RegisteredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TableName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TenderDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TenderType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TenderTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

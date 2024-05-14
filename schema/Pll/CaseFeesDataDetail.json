@@ -1,0 +1,61 @@
+{
+  "CaseFeesDataDetail": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseFeesDataDetail/Add",
+      "params": [
+        {
+          "name": "CaDataDetailId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaFeeId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Sequence",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseFeesDataDetail/Delete",
+      "params": [
+        {
+          "name": "CaFeesDataDetailId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseFeesDataDetail/Search",
+      "params": [
+        {
+          "name": "CaDataDetailId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaFeeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaFeesDataDetailId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

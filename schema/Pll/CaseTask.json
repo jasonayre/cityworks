@@ -1,0 +1,392 @@
+{
+  "CaseTask": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTask/Add",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DisciplineId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EndPoint",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "HearingTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InsertBeforeStartPoint",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LocationNotes",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResponsibleDeptId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResponsibleDivId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResponsibleUserId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResultSetId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartPoint",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TargetEndDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TaskSequence",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Unit",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTask/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CheckRelatedItems",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTask/ByIds",
+      "params": [
+        {
+          "name": "CaTaskIds",
+          "type": "List<Int64>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CheckRelatedItems",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTask/Delete",
+      "params": [
+        {
+          "name": "CaTaskId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTask/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTask/Search",
+      "params": [
+        {
+          "name": "ResponsibleUserId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskAvailable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskComplete",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SetResult": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTask/SetResult",
+      "params": [
+        {
+          "name": "CaTaskId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ResultCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TaskCompleteDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskCompletedBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTask/Update",
+      "params": [
+        {
+          "name": "ActualEndDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualStartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AutoSchduleInspFlg",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CalWeekDayFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaTaskId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateExpired",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Db2BAdjustedFrom",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DisciplineId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EndPoint",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HearingTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsInsertBetweenLevel",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LocationNotes",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LoginId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResponsibleDeptId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResponsibleDivId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResponsibleUserId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResultCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartPoint",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TargetEndDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TargetStartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskAvailableDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskAvailableFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskCompleteDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskCompletedBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskCompleteFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskGeoFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskSequence",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Unit",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

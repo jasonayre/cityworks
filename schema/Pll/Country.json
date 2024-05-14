@@ -1,0 +1,49 @@
+{
+  "Country": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Country/Add",
+      "params": [
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CountryName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Country/Delete",
+      "params": [
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Country/Update",
+      "params": [
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CountryName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

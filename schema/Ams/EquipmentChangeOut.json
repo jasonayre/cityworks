@@ -1,0 +1,5187 @@
+{
+  "EquipmentChangeOut": {
+    "AddChangeOutRead": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/AddChangeOutRead",
+      "params": [
+        {
+          "name": "ChangeOutId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsNewRead",
+          "type": "Boolean",
+          "required": false,
+          "comments": "determine if this should be the operation 'new' read"
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddOperation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/AddOperation",
+      "params": [
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangeOutId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Operation",
+          "type": "Int32",
+          "required": true,
+          "comments": "operation type: Detach = 0, Attach = 1, Replace = 2, Read = 4"
+        },
+        {
+          "name": "OperationComments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RecordDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Attach": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/Attach",
+      "params": [
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangeDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangedById",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangeOutId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationComments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RecordDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/ById",
+      "params": [
+        {
+          "name": "ChangeOutId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/ByIds",
+      "params": [
+        {
+          "name": "ChangeOutIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/Delete",
+      "params": [
+        {
+          "name": "ChangeOutId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ChangeOutIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": "Must provide a changeoutId, use single parameter or list of values"
+        }
+      ]
+    },
+    "DeleteChangeOutReads": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/DeleteChangeOutReads",
+      "params": [
+        {
+          "name": "ReadIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteOperations": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/DeleteOperations",
+      "params": [
+        {
+          "name": "OperationIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Detach": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/Detach",
+      "params": [
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangeDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangedById",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangeOutId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationComments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RecordDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DirectParent": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/DirectParent",
+      "params": [
+        {
+          "name": "EntitySid",
+          "type": "Int32",
+          "required": true,
+          "comments": "Must provide EntityUid or EntitySid"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": true,
+          "comments": "Must provide EntityUid or EntitySid"
+        },
+        {
+          "name": "ParentType",
+          "type": "String",
+          "required": false,
+          "comments": "Defaults to first Cityworks configured parent type"
+        }
+      ]
+    },
+    "Entities": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/Entities",
+      "params": [
+        {
+          "name": "EntitySids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": "Must provide EntityUid and/or EntitySid"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": true,
+          "comments": "Must provide EntityUid and/or EntitySid"
+        },
+        {
+          "name": "ReadableValues",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ReturnGeometry",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Set returnGeometry=true/false when querying gis, default is true"
+        }
+      ]
+    },
+    "Entity": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/Entity",
+      "params": [
+        {
+          "name": "EntitySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReturnGeometry",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Set returnGeometry=true/false when querying gis, default is true"
+        }
+      ]
+    },
+    "History": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/History",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Read": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/Read",
+      "params": [
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangeDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangedById",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangeOutId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationComments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RecordDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ReadConfigs": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/ReadConfigs",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityTypes",
+          "type": "List<String>",
+          "required": false,
+          "comments": "At least one EntityType is required, use single parameter and/or list of values"
+        }
+      ]
+    },
+    "Related": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/Related",
+      "params": [
+        {
+          "name": "EntitySid",
+          "type": "Int32",
+          "required": true,
+          "comments": "Must provide EntityUid and/or EntitySid"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": true,
+          "comments": "Must provide EntityUid and/or EntitySid"
+        }
+      ]
+    },
+    "Replace": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/Replace",
+      "params": [
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangeDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangedById",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangeOutId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationComments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RecordDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateChangeOutRead": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/UpdateChangeOutRead",
+      "params": [
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReadId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateOperation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EquipmentChangeOut/UpdateOperation",
+      "params": [
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChangeOutId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewRead_Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num10",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num11",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num12",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num13",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num14",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num15",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num16",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num17",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num18",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num19",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num20",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num6",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num7",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num8",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Num9",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldRead_Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationComments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OperationId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "RecordDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

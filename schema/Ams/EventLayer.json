@@ -1,0 +1,38 @@
+{
+  "EventLayer": {
+    "All": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EventLayer/All",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeDisabled",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/EventLayer/ById",
+      "params": [
+        {
+          "name": "EventLayerId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+module Cityworks
+<%- paths.sort.each do |path| -%>
+  require_relative '<%= path %>'
+<%- end -%>
+end

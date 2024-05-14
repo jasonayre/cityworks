@@ -1,0 +1,368 @@
+{
+  "GISService": {
+    "AddGISServiceDefinition": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/GISService/AddGISServiceDefinition",
+      "params": [
+        {
+          "name": "DashboardUse",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Filter for service definitions that can be used in Dashboard"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": true,
+          "comments": "Definition Name"
+        },
+        {
+          "name": "ServiceEndPointIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "GISServiceEndPoint ids to add to this definition"
+        }
+      ]
+    },
+    "AddGISServiceEndPointSecurity": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/GISService/AddGISServiceEndPointSecurity",
+      "params": [
+        {
+          "name": "AuthorizationUrl",
+          "type": "String",
+          "required": false,
+          "comments": "Oauth2 authorization url, used with SecurityType = 2 or 3 (OAuthUser, OAuthApp)"
+        },
+        {
+          "name": "ClientId",
+          "type": "String",
+          "required": false,
+          "comments": "Oauth2 client id, used with SecurityType = 2 or 3 (OAuthUser, OAuthApp)"
+        },
+        {
+          "name": "ClientSecret",
+          "type": "String",
+          "required": false,
+          "comments": "Oauth2 client secret, used with SecurityType = 2 or 3 (OAuthUser, OAuthApp)"
+        },
+        {
+          "name": "CreateServiceDefinition",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Create a service defintion from this endpoint, must provide ServiceDefintionName"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Defaults to current user's domain id"
+        },
+        {
+          "name": "ExpandWebMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Create endpoints for webmap content, only applied if ServiceType = 6 (WebMap)"
+        },
+        {
+          "name": "FileName",
+          "type": "String",
+          "required": false,
+          "comments": "Mobile map cache file name, used with ServiceType = 14 and 18 (TilePackage, MobileMapPackage)"
+        },
+        {
+          "name": "FileSize",
+          "type": "Decimal",
+          "required": false,
+          "comments": "Mobile map cache file size, used with ServiceType = 14 and 18 (TilePackage, MobileMapPackage)"
+        },
+        {
+          "name": "IsPermanent",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Determine if a permanent token should be requested"
+        },
+        {
+          "name": "Password",
+          "type": "String",
+          "required": false,
+          "comments": "Password, used with SecurityType = 1 (GenerateToken)"
+        },
+        {
+          "name": "SecurityType",
+          "type": "Int32",
+          "required": false,
+          "comments": "GISServiceSecurityType enum value, default 0 = None"
+        },
+        {
+          "name": "Service",
+          "type": "String",
+          "required": true,
+          "comments": "Service url or webmap id"
+        },
+        {
+          "name": "ServiceDefinitionName",
+          "type": "String",
+          "required": false,
+          "comments": "Service definition name, only applied if CreateServiceDefinition = true"
+        },
+        {
+          "name": "ServiceName",
+          "type": "String",
+          "required": true,
+          "comments": "Endpoint display name"
+        },
+        {
+          "name": "ServiceType",
+          "type": "Int32",
+          "required": false,
+          "comments": "GISServiceType enum value, default 0 = DynamicMap"
+        },
+        {
+          "name": "SharingUrl",
+          "type": "String",
+          "required": false,
+          "comments": "GIS sharing url"
+        },
+        {
+          "name": "Timeout",
+          "type": "Int32",
+          "required": false,
+          "comments": "Number of minutes that the token will last, default is 60"
+        },
+        {
+          "name": "TokenUrl",
+          "type": "String",
+          "required": false,
+          "comments": "Generate token url, used with SecurityType = 1 (GenerateToken)"
+        },
+        {
+          "name": "UserId",
+          "type": "String",
+          "required": false,
+          "comments": "Username, used with SecurityType = 1 (GenerateToken)"
+        }
+      ]
+    },
+    "CloneGISServiceDefinition": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/GISService/CloneGISServiceDefinition",
+      "params": [
+        {
+          "name": "DefinitionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": false,
+          "comments": "Cloned Definition Name, default is origninal definition name + ' Cloned'"
+        }
+      ]
+    },
+    "DeleteGISServiceDefinitions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/GISService/DeleteGISServiceDefinitions",
+      "params": [
+        {
+          "name": "DefinitionIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteGISServiceEndPointSecurities": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/GISService/DeleteGISServiceEndPointSecurities",
+      "params": [
+        {
+          "name": "ServiceIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "GISServiceDefinitions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/GISService/GISServiceDefinitions",
+      "params": [
+        {
+          "name": "DashboardUse",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Filter for service definitions that can be used in Dashboard"
+        },
+        {
+          "name": "DefinitionId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Search by definition id"
+        },
+        {
+          "name": "DefinitionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Search by definition ids"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Names",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Search by definition names, case insensitive"
+        },
+        {
+          "name": "ServiceIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Search by service ids"
+        }
+      ]
+    },
+    "UpdateGISServiceEndPointSecurity": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/GISService/UpdateGISServiceEndPointSecurity",
+      "params": [
+        {
+          "name": "AuthorizationUrl",
+          "type": "String",
+          "required": false,
+          "comments": "Oauth2 authorization url, used with SecurityType = 2 or 3 (OAuthUser, OAuthApp)"
+        },
+        {
+          "name": "ClientId",
+          "type": "String",
+          "required": false,
+          "comments": "Oauth2 client id, used with SecurityType = 2 or 3 (OAuthUser, OAuthApp)"
+        },
+        {
+          "name": "ClientSecret",
+          "type": "String",
+          "required": false,
+          "comments": "Oauth2 client secret, used with SecurityType = 2 or 3 (OAuthUser, OAuthApp)"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Defaults to current user's domain id"
+        },
+        {
+          "name": "ExpandWebMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Create endpoints for webmap content, only applied if ServiceType = 6 (WebMap)"
+        },
+        {
+          "name": "FileName",
+          "type": "String",
+          "required": false,
+          "comments": "Mobile map cache file name, used with ServiceType = 14 and 18 (TilePackage, MobileMapPackage)"
+        },
+        {
+          "name": "FileSize",
+          "type": "Decimal",
+          "required": false,
+          "comments": "Mobile map cache file size, used with ServiceType = 14 and 18 (TilePackage, MobileMapPackage)"
+        },
+        {
+          "name": "IsPermanent",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Determine if a permanent token should be requested"
+        },
+        {
+          "name": "Password",
+          "type": "String",
+          "required": false,
+          "comments": "Password, used with SecurityType = 1 (GenerateToken)"
+        },
+        {
+          "name": "SecurityType",
+          "type": "Int32",
+          "required": false,
+          "comments": "GISServiceSecurityType enum value, default 0 = None"
+        },
+        {
+          "name": "Service",
+          "type": "String",
+          "required": false,
+          "comments": "Service url or webmap id"
+        },
+        {
+          "name": "ServiceId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ServiceName",
+          "type": "String",
+          "required": false,
+          "comments": "Endpoint display name"
+        },
+        {
+          "name": "ServiceType",
+          "type": "Int32",
+          "required": false,
+          "comments": "GISServiceType enum value, default 0 = DynamicMap"
+        },
+        {
+          "name": "SharingUrl",
+          "type": "String",
+          "required": false,
+          "comments": "GIS sharing url"
+        },
+        {
+          "name": "Timeout",
+          "type": "Int32",
+          "required": false,
+          "comments": "Number of minutes that the token will last, default is 60"
+        },
+        {
+          "name": "TokenUrl",
+          "type": "String",
+          "required": false,
+          "comments": "Generate token url, used with SecurityType = 1 (GenerateToken)"
+        },
+        {
+          "name": "UserId",
+          "type": "String",
+          "required": false,
+          "comments": "Username, used with SecurityType = 1 (GenerateToken)"
+        }
+      ]
+    },
+    "ValidateServiceSecurity": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/GISService/ValidateServiceSecurity",
+      "params": [
+        {
+          "name": "SecurityIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

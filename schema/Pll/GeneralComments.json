@@ -1,0 +1,38 @@
+{
+  "GeneralComments": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/GeneralComments/Add",
+      "params": [
+        {
+          "name": "CommentCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GeneralComment",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/GeneralComments/Delete",
+      "params": [
+        {
+          "name": "CommentId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

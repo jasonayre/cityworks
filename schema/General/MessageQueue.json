@@ -1,0 +1,190 @@
+{
+  "MessageQueue": {
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/MessageQueue/ByIds",
+      "params": [
+        {
+          "name": "Ids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxCount",
+          "type": "Int32",
+          "required": false,
+          "comments": "Defaults to 15"
+        },
+        {
+          "name": "Status",
+          "type": "QueueStatus",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/MessageQueue/Delete",
+      "params": [
+        {
+          "name": "HoursToKeep",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "QueueStatus",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Preferences": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/MessageQueue/Preferences",
+      "params": [
+
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/MessageQueue/Search",
+      "params": [
+        {
+          "name": "DateCreatedBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCreatedEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateUpdatedBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateUpdatedEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HookId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HookType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Result",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/MessageQueue/Update",
+      "params": [
+        {
+          "name": "HookId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HookType",
+          "type": "ActionType",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Packet",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Result",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "QueueStatus",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateMessageStatus": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/MessageQueue/UpdateMessageStatus",
+      "params": [
+        {
+          "name": "Ids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "QueueStatus",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WebHooks": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/MessageQueue/WebHooks",
+      "params": [
+        {
+          "name": "HookIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

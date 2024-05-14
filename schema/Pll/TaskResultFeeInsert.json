@@ -1,0 +1,84 @@
+{
+  "TaskResultFeeInsert": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/TaskResultFeeInsert/Add",
+      "params": [
+        {
+          "name": "FeeSetupId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TaskResultFeeInsertId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TaskResultId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/TaskResultFeeInsert/Delete",
+      "params": [
+        {
+          "name": "TaskResultFeeInsertId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByTaskId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/TaskResultFeeInsert/DeleteByTaskId",
+      "params": [
+        {
+          "name": "TaskId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/TaskResultFeeInsert/Update",
+      "params": [
+        {
+          "name": "FeeSetupId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TaskResultFeeInsertId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TaskResultId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

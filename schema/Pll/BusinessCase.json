@@ -1,0 +1,224 @@
+{
+  "BusinessCase": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/BusinessCase/Add",
+      "params": [
+        {
+          "name": "AnonymousFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssignedTo",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AutoStatusExpiryFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BLicenseFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BusCaseCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BusCaseDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CheckQuickCreate",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InfoFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InfoText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RegisteredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ShowQuickCreate",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TermsFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TermsText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/BusinessCase/Update",
+      "params": [
+        {
+          "name": "AnonymousFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssignedTo",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AutoStatusExpireFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BLicenseFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BusCaseCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BusCaseDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BusCaseId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CheckQuickCreate",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InfoFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InfoText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RegisteredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ShowQuickCreate",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TermsFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TermsText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

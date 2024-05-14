@@ -1,0 +1,192 @@
+{
+  "TemplateMapLayer": {
+    "DeleteInspectionInstancesByInspectionId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TemplateMapLayer/DeleteInspectionInstancesByInspectionId",
+      "params": [
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteServiceRequestInstancesByRequestId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TemplateMapLayer/DeleteServiceRequestInstancesByRequestId",
+      "params": [
+        {
+          "name": "ServiceRequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteWorkOrderInstancesByWorkOrdertId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TemplateMapLayer/DeleteWorkOrderInstancesByWorkOrdertId",
+      "params": [
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionInstanceMapLayersByInspectionId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TemplateMapLayer/InspectionInstanceMapLayersByInspectionId",
+      "params": [
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ServiceRequestInstanceMapLayersByRequestId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TemplateMapLayer/ServiceRequestInstanceMapLayersByRequestId",
+      "params": [
+        {
+          "name": "ServiceRequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateInspectionInstanceMapLayers": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TemplateMapLayer/UpdateInspectionInstanceMapLayers",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateServiceRequestInstanceMapLayers": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TemplateMapLayer/UpdateServiceRequestInstanceMapLayers",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ServiceRequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateWorkOrderInstanceMapLayers": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TemplateMapLayer/UpdateWorkOrderInstanceMapLayers",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderInstanceMapLayersByWorkOrderId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TemplateMapLayer/WorkOrderInstanceMapLayersByWorkOrderId",
+      "params": [
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderInstanceMapLayersByWorkOrderSid": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TemplateMapLayer/WorkOrderInstanceMapLayersByWorkOrderSid",
+      "params": [
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

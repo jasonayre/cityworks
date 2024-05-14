@@ -1,0 +1,148 @@
+{
+  "CaseFees": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseFees/Add",
+      "params": [
+        {
+          "name": "Amount",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AutoRecalculate",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Factor",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeeSetupId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "FeeTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Invoiced",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Rate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddDefault": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseFees/AddDefault",
+      "params": [
+        {
+          "name": "BusCaseId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseFees/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseFees/Delete",
+      "params": [
+        {
+          "name": "CaFeeId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseFees/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseFees/Search",
+      "params": [
+        {
+          "name": "CaFeeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeeCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeeDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

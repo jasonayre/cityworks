@@ -1,0 +1,681 @@
+{
+  "Employee": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/Add",
+      "params": [
+        {
+          "name": "AdDomain",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BenefitRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BenefitType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultImgPath",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmailReq",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FirstName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Groups the employee should be a member of, group DomainId must match employee DomainId"
+        },
+        {
+          "name": "HolidayRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HolidayType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HourlyRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsDomainAdmin",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Employee is a domain administrator. This option is ignored if the current user is not a domain administrator of the employee's domain"
+        },
+        {
+          "name": "LastName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LicenseCodes",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Employee license codes"
+        },
+        {
+          "name": "LoginName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapServiceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MiddleInitial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MobileMapCacheId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Organization",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherRateType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OverheadRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OverheadType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OvertimeRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OvertimeType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pager",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Password",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ShiftDiffRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ShiftDiffType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StandbyRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StandbyType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Title",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UniqueName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddLicensedItems": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/AddLicensedItems",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LicenseCodes",
+          "type": "List<String>",
+          "required": true,
+          "comments": "Licensed Item code"
+        }
+      ]
+    },
+    "All": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/All",
+      "params": [
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByGroupId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/ByGroupId",
+      "params": [
+        {
+          "name": "GroupId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/ById",
+      "params": [
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/ByIds",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CustomDataFields": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/CustomDataFields",
+      "params": [
+        {
+          "name": "CustFieldIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/Delete",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteLicensedItems": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/DeleteLicensedItems",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LicenseCodes",
+          "type": "List<String>",
+          "required": true,
+          "comments": "Licensed Item code"
+        }
+      ]
+    },
+    "Groups": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/Groups",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "NamesAreUnique": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/NamesAreUnique",
+      "params": [
+        {
+          "name": "Names",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/Search",
+      "params": [
+        {
+          "name": "AdDomain",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FirstName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FullName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsUser",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Filter list by employees that have or do not have a user account"
+        },
+        {
+          "name": "LastName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LoginName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Organization",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UniqueName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Employee/Update",
+      "params": [
+        {
+          "name": "AdDomain",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BenefitRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BenefitType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultImgPath",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": "Ignored when updating more than one record at a time"
+        },
+        {
+          "name": "EmailReq",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeId",
+          "type": "String",
+          "required": false,
+          "comments": "Ignored when updating more than one record at a time"
+        },
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "FirstName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HolidayRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HolidayType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HourlyRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LoginName",
+          "type": "String",
+          "required": false,
+          "comments": "Ignored when updating more than one record at a time"
+        },
+        {
+          "name": "MapServiceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MiddleInitial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MobileMapCacheId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Organization",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherRateType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OverheadRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OverheadType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OvertimeRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OvertimeType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pager",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Password",
+          "type": "String",
+          "required": false,
+          "comments": "Ignored when updating more than one record at a time"
+        },
+        {
+          "name": "ShiftDiffRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ShiftDiffType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StandbyRate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StandbyType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Title",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UniqueName",
+          "type": "String",
+          "required": false,
+          "comments": "Ignored when updating more than one record at a time"
+        },
+        {
+          "name": "WorkPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

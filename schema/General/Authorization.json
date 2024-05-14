@@ -1,0 +1,76 @@
+{
+  "Authorization": {
+    "LicensedApiCheck": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authorization/LicensedApiCheck",
+      "params": [
+        {
+          "name": "Area",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Service",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "LicensedExtensionCheck": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authorization/LicensedExtensionCheck",
+      "params": [
+        {
+          "name": "Extension",
+          "type": "LicensedExtension",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "LicensedExtensionsCheck": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authorization/LicensedExtensionsCheck",
+      "params": [
+        {
+          "name": "Extensions",
+          "type": "List<LicensedExtension>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "LicensedFeatureCheck": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authorization/LicensedFeatureCheck",
+      "params": [
+        {
+          "name": "Feature",
+          "type": "LicensedFeature",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "LicensedFeaturesCheck": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authorization/LicensedFeaturesCheck",
+      "params": [
+        {
+          "name": "Features",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "LicensedServicesCheck": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authorization/LicensedServicesCheck",
+      "params": [
+        {
+          "name": "Services",
+          "type": "List<String>",
+          "required": true,
+          "comments": "List of 'Area/Servce', i.e. ['AMS/Inspection','AMS/WorkOrder','PLL/Case']"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "ScheduleEvent": {
+    "ByEmployeeSids": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ScheduleEvent/ByEmployeeSids",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ScheduleEvent/ByIds",
+      "params": [
+        {
+          "name": "ScheduleEventIds",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByUserIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ScheduleEvent/ByUserIds",
+      "params": [
+        {
+          "name": "UserIds",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "CaseChildObject": {
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseChildObject/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseChildObject/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "GetList": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseChildObject/GetList",
+      "params": [
+        {
+          "name": "FilterColumn",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FilterOperator",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FilterValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupBy",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HavingCondition",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PageNumber",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PageSize",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SingleRecordFlag",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SortColumn",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SortDirection",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WhereClause",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseChildObject/Search",
+      "params": [
+        {
+          "name": "CaChildObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChildCaseNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChildId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseChildObject/SearchObject",
+      "params": [
+        {
+          "name": "CaChildObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChildCaseNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChildId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

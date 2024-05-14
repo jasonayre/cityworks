@@ -1,0 +1,1543 @@
+{
+  "ManholeInspection": {
+    "AddImage": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/AddImage",
+      "params": [
+        {
+          "name": "AttachedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeAttached",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ImagePath",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AddObservation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/AddObservation",
+      "params": [
+        {
+          "name": "Condition",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ConditionScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DistFromRim",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstMhIandI",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LeakCategory",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeakCatScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeakType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeakTypeScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MhPart",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TestMethod",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddPipeObservation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/AddPipeObservation",
+      "params": [
+        {
+          "name": "BypassPipe",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Diameter",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DropConnection",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstPipeIandI",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Query gis to update pipe observation using PipeType and PipeId, default is false. Gis data will overwrite input parameters"
+        },
+        {
+          "name": "InOut",
+          "type": "PipeInOut",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Material",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeCond",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeCondScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeDepth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeDirection",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeElev",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByEntityTypeIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/ByEntityTypeIds",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/ById",
+      "params": [
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/ByIds",
+      "params": [
+        {
+          "name": "InspectionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByWorkOrderIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/ByWorkOrderIds",
+      "params": [
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByWorkOrders": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/ByWorkOrders",
+      "params": [
+        {
+          "name": "WorkOrderSids",
+          "type": "List<Int64>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ChangeCustomFieldCategory": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/ChangeCustomFieldCategory",
+      "params": [
+        {
+          "name": "CategoryId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "InspectionIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CloneInspection": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/CloneInspection",
+      "params": [
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Create": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/Create",
+      "params": [
+        {
+          "name": "AccessType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BarrelDiam",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BenchMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChannelMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ConeMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldDateValues",
+          "type": "Dictionary<Int32, DateTime>",
+          "required": false,
+          "comments": "Used to update custom field date values. Takes precedence over CustomFieldValues entry"
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Depth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepthOfDebris",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepthOfFlow",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepthOfSurchrg",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DistToHydrant",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FacilityId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowTypeScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ForemanRecomnd",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FrmMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Query gis to update inspection using FeatureType and FacilityId, default is false. Gis data will overwrite input parameters"
+        },
+        {
+          "name": "GroundCond",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBy",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LidDiameter",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LidMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MhLength",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MhMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MhWidth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservationSum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ponding",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PondingScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RepairsMade",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RingMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Spot",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StepMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SuperAprvlComnts",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SurfaceType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TribArea",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VcsWKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKID",
+          "type": "Int32",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT) if XY needs to be projected"
+        },
+        {
+          "name": "WKT",
+          "type": "String",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT) if XY needs to be projected"
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "EntityTypes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/EntityTypes",
+      "params": [
+
+      ]
+    },
+    "Images": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/Images",
+      "params": [
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/InspectedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Make sure inspected by values for specific inspections are included in the list even if they are inactive"
+        }
+      ]
+    },
+    "Move": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/Move",
+      "params": [
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "VcsWKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKID",
+          "type": "Int32",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT)"
+        },
+        {
+          "name": "WKT",
+          "type": "String",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT)"
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Observations": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/Observations",
+      "params": [
+        {
+          "name": "InspectionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ObservationsByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/ObservationsByIds",
+      "params": [
+        {
+          "name": "ObservationIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "PipeObservations": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/PipeObservations",
+      "params": [
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Query gis to update pipe observation using PipeType and PipeId with current gis data, default is false. Gis data will overwrite input parameters, does not save updated gis data to db"
+        },
+        {
+          "name": "InspectionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "PipeObservationsByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/PipeObservationsByIds",
+      "params": [
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Query gis to update pipe observation using PipeType and PipeId with current gis data, default is false. Gis data will overwrite input parameters, does not save updated gis data to db"
+        },
+        {
+          "name": "PipeObservationIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/Update",
+      "params": [
+        {
+          "name": "AccessType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BarrelDiam",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BenchMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChannelMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ConeMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldDateValues",
+          "type": "Dictionary<Int32, DateTime>",
+          "required": false,
+          "comments": "Used to update custom field date values. Takes precedence over CustomFieldValues entry"
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Depth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepthOfDebris",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepthOfFlow",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepthOfSurchrg",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DistToHydrant",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FacilityId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowTypeScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ForemanRecomnd",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FrmMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Query gis to update inspection using FeatureType and FacilityId, default is false. Gis data will overwrite input parameters"
+        },
+        {
+          "name": "GroundCond",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LidDiameter",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LidMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MhLength",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MhMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MhWidth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservationSum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ponding",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PondingScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RepairsMade",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RingMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Spot",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StepMaterial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SuperAprvlComnts",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SurfaceType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TribArea",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateGis",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateObservation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/UpdateObservation",
+      "params": [
+        {
+          "name": "Condition",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ConditionScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DistFromRim",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstMhIandI",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeakCategory",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeakCatScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeakType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeakTypeScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MhObservId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "MhPart",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TestMethod",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdatePipeObservation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ManholeInspection/UpdatePipeObservation",
+      "params": [
+        {
+          "name": "BypassPipe",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Diameter",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DropConnection",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstPipeIandI",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Query gis to update pipe observation using PipeType and PipeId, default is false. Gis data will overwrite input parameters"
+        },
+        {
+          "name": "InOut",
+          "type": "PipeInOut",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Material",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeCond",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeCondScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeDepth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeDirection",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeElev",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeInMhId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PipeType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateGis",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

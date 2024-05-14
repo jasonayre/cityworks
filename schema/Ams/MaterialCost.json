@@ -1,0 +1,156 @@
+{
+  "MaterialCost": {
+    "AddWorkOrderCosts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/MaterialCost/AddWorkOrderCosts",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CombineIssuesByMaterialSid",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Combine issues with the same MaterialSid into a single commit, default is true"
+        },
+        {
+          "name": "ContractorMaterialCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorMaterialDescription",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorMaterialId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Entities",
+          "type": "List<WorkOrderEntity>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Estimated",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSerialIds",
+          "type": "Dictionary<Int32, List<String>>",
+          "required": false,
+          "comments": "If material is serialized, include serial numbers to be issued. The material Sid must be in both this and MaterialSids parameter"
+        },
+        {
+          "name": "MaterialSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Source",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Units",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteWorkOrderCosts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/MaterialCost/DeleteWorkOrderCosts",
+      "params": [
+        {
+          "name": "Estimated",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialCostIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "SerialNumbersByMaterialCostIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/MaterialCost/SerialNumbersByMaterialCostIds",
+      "params": [
+        {
+          "name": "MaterialCostIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderCostsByWorkOrder": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/MaterialCost/WorkOrderCostsByWorkOrder",
+      "params": [
+        {
+          "name": "Estimated",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSids",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

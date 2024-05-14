@@ -1,0 +1,814 @@
+{
+  "CaseDataDetail": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseDataDetail/Add",
+      "params": [
+        {
+          "name": "CaDataGroupId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CalcRateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseDataDetailId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ColumnSequence",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CurrencyFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CurrencyValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCountFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCountValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateValue",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailSequence",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ListValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ListValuesFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MultiListValues",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MultiListValuesFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Q1Q2Q3Flag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Q2Value",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Q3Value",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Rate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TextFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TextValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Value",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValueFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YesNoFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YesNoValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseDataDetail/Search",
+      "params": [
+        {
+          "name": "CaDataDetailId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaDataGroupId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CalcRateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseDataDetailId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EncryptFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ListValuesFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MultiListValuesFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TextFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValueFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YesNoFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseDataDetail/SearchObject",
+      "params": [
+        {
+          "name": "CaDataDetailId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaDataGroupId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CalcRateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseDataDetailId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EncryptFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ListValuesFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MultiListValuesFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TextFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValueFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YesNoFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseDataDetail/Update",
+      "params": [
+        {
+          "name": "CaDataDetailId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaDataGroupId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CalcRateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseDataDetailId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ColumnSequence",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CurrencyFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CurrencyValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCountFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCountValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateValue",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailSequence",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ListValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ListValuesFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MultiListValues",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MultiListValuesFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Q1Q2Q3Flag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Q2Value",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Q3Value",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Rate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TextFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TextValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Value",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValueFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YesNoFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YesNoValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateLock": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseDataDetail/UpdateLock",
+      "params": [
+        {
+          "name": "CaDataDetailId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Lock",
+          "type": "Boolean",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "WIPAdd": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseDataDetail/WIPAdd",
+      "params": [
+        {
+          "name": "CaDataGroupId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CalcRateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseDataDetailId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ColumnSequence",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CommentFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CurrencyFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CurrencyValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCountFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCountValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateValue",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DetailDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DetailSequence",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ListValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ListValuesFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MultiListValues",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MultiListValuesFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Q1Q2Q3Flag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Q2Value",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Q3Value",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Rate",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TextFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TextValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Value",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValueFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YesNoFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YesNoValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "Equipment": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Equipment/Add",
+      "params": [
+        {
+          "name": "Category",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultImgPath",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EquipmentUid",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ForCheckout",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Manufacturer",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Model",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RateType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WarranteeDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "All": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Equipment/All",
+      "params": [
+        {
+          "name": "ViewableOnly",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Equipment/ById",
+      "params": [
+        {
+          "name": "EquipmentSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Equipment/ByIds",
+      "params": [
+        {
+          "name": "EquipmentSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CustomDataFields": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Equipment/CustomDataFields",
+      "params": [
+        {
+          "name": "CustFieldIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EquipmentSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Equipment/Delete",
+      "params": [
+        {
+          "name": "EquipmentSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Equipment/Search",
+      "params": [
+        {
+          "name": "Description",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EquipmentSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EquipmentUid",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ForCheckout",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Manufacturer",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Model",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RateType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Equipment/Update",
+      "params": [
+        {
+          "name": "Category",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultImgPath",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EquipmentSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EquipmentUid",
+          "type": "String",
+          "required": false,
+          "comments": "Ignored when updating more than one equipment"
+        },
+        {
+          "name": "ForCheckout",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Manufacturer",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Model",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RateType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WarranteeDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

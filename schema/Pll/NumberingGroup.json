@@ -1,0 +1,176 @@
+{
+  "NumberingGroup": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/NumberingGroup/Add",
+      "params": [
+        {
+          "name": "DateExpired",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncrementBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastNum",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastNumDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaskedPaddedLength",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberingGroupCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberingGroupDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrefixYyyymmdd",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResetYearEndFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Separator",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartWith",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/NumberingGroup/Update",
+      "params": [
+        {
+          "name": "DateExpired",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncrementBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastNum",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastNumDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaskedPaddedLength",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberingGroupCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberingGroupDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberingGroupId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrefixYyyymmdd",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResetYearEndFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Separator",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartWith",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "CaseObjectComments": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseObjectComments/Add",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PAVisibleFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseObjectComments/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseObjectComments/ByCaObjectIds",
+      "params": [
+        {
+          "name": "CaObjectIds",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseObjectComments/Delete",
+      "params": [
+        {
+          "name": "CaObjectCommentIds",
+          "type": "List<Int64>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseObjectComments/Update",
+      "params": [
+        {
+          "name": "CaObjectCommentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Commenttext",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PAVisibleFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

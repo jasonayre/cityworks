@@ -1,0 +1,361 @@
+{
+  "CasePayment": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePayment/Add",
+      "params": [
+        {
+          "name": "CaFeeId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaReceiptId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustFeeSeq",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DateReceived",
+          "type": "DateTime",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DateVoided",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentAccount",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentAmount",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PaymentDate",
+          "type": "DateTime",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ReceivedBy",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ReferenceInfo",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TenderTypeId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "VoidedBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddDeposit": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePayment/AddDeposit",
+      "params": [
+        {
+          "name": "CaDepositId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaReceiptId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateReceived",
+          "type": "DateTime",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DateVoided",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentAccount",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentAmount",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PaymentDate",
+          "type": "DateTime",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ReceivedBy",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ReferenceInfo",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TenderTypeId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "VoidedBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePayment/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePayment/Delete",
+      "params": [
+        {
+          "name": "CaPaymentId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePayment/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DownloadReceipt": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePayment/DownloadReceipt",
+      "params": [
+        {
+          "name": "Content",
+          "type": "List<Byte>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePayment/Search",
+      "params": [
+        {
+          "name": "CaPaymentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeeAmount",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeeCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeeDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentAccount",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentAmount",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TenderType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePayment/SearchObject",
+      "params": [
+        {
+          "name": "CaPaymentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeeAmount",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeeCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeeDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentAccount",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentAmount",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TenderType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePayment/Update",
+      "params": [
+        {
+          "name": "CaPaymentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReferenceInfo",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Voided",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

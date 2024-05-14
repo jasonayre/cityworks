@@ -1,0 +1,181 @@
+{
+  "CaseReceipt": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseReceipt/Add",
+      "params": [
+        {
+          "name": "AmountBalance",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LoginId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ReceiptDate",
+          "type": "DateTime",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ReceiptFileName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TotalAmountDue",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TotalAmountTendered",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "UserId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseReceipt/Search",
+      "params": [
+        {
+          "name": "AmountBalance",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaReceiptId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LoginId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReceiptFileName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalAmountDue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalAmountTendered",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UserId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseReceipt/SearchObject",
+      "params": [
+        {
+          "name": "AmountBalance",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaReceiptId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LoginId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReceiptFileName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalAmountDue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalAmountTendered",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UserId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

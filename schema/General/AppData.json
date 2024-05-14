@@ -1,0 +1,16 @@
+{
+  "AppData": {
+    "CurrentLocation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/AppData/CurrentLocation",
+      "params": [
+
+      ]
+    },
+    "SelectedEntities": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/AppData/SelectedEntities",
+      "params": [
+
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Localization": {
+    "LocalizationSettings": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Localization/LocalizationSettings",
+      "params": [
+
+      ]
+    },
+    "TimeZones": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Localization/TimeZones",
+      "params": [
+
+      ]
+    }
+  }
+}

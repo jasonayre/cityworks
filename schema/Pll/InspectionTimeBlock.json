@@ -1,0 +1,33 @@
+{
+  "InspectionTimeBlock": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/InspectionTimeBlock/Add",
+      "params": [
+        {
+          "name": "EndTime",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "InspTimeBlocksDetails",
+          "type": "List<InspTimeBlocksDetailItem>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LabelText",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StartTime",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

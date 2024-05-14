@@ -1,0 +1,793 @@
+{
+  "Designer": {
+    "AddAttachmentMapping": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AddAttachmentMapping",
+      "params": [
+        {
+          "name": "Alias",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Source",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AddCodeDescription": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AddCodeDescription",
+      "params": [
+        {
+          "name": "Code",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddCodeDescScore": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AddCodeDescScore",
+      "params": [
+        {
+          "name": "Code",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Score",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddCodeType": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AddCodeType",
+      "params": [
+        {
+          "name": "CodeFormat",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Module",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AddDescScore": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AddDescScore",
+      "params": [
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Score",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddDomain": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AddDomain",
+      "params": [
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKID",
+          "type": "Int32",
+          "required": false,
+          "comments": "Default is 3857 (WGS_1984_Web_Mercator_Auxiliary_Sphere)"
+        }
+      ]
+    },
+    "AddEmployeeSkillCode": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AddEmployeeSkillCode",
+      "params": [
+        {
+          "name": "Code",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddGroup": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AddGroup",
+      "params": [
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Defaults to the current user domain, unless the user is a domain administrator"
+        },
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "EmployeeSids to add to the new group"
+        },
+        {
+          "name": "GISRight",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "MapServiceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddRole": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AddRole",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Employees to add to the server menu role"
+        },
+        {
+          "name": "Role",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AddUsersToRole": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AddUsersToRole",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Role",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AttachmentMappings": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/AttachmentMappings",
+      "params": [
+
+      ]
+    },
+    "CctvCodes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/CctvCodes",
+      "params": [
+
+      ]
+    },
+    "CodeDescriptions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/CodeDescriptions",
+      "params": [
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CodeDescScores": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/CodeDescScores",
+      "params": [
+
+      ]
+    },
+    "CodeTypes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/CodeTypes",
+      "params": [
+        {
+          "name": "Format",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateUser": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/CreateUser",
+      "params": [
+        {
+          "name": "Email",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Password",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Username",
+          "type": "String",
+          "required": false,
+          "comments": "Will use email for Username if not supplied."
+        }
+      ]
+    },
+    "DeleteAttachmentMappings": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/DeleteAttachmentMappings",
+      "params": [
+        {
+          "name": "Ids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteCodeDescriptions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/DeleteCodeDescriptions",
+      "params": [
+        {
+          "name": "Codes",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteDomains": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/DeleteDomains",
+      "params": [
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteEmployeeSkillCodes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/DeleteEmployeeSkillCodes",
+      "params": [
+        {
+          "name": "Codes",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteGroups": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/DeleteGroups",
+      "params": [
+        {
+          "name": "GroupIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteLogin": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/DeleteLogin",
+      "params": [
+        {
+          "name": "LoginName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteRoles": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/DeleteRoles",
+      "params": [
+        {
+          "name": "Roles",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DescScores": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/DescScores",
+      "params": [
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Domains": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/Domains",
+      "params": [
+
+      ]
+    },
+    "EmployeeGroups": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/EmployeeGroups",
+      "params": [
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "If set, groups will be limited to provided domains. Otherwise, all domain ids wil be used."
+        },
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "GroupMembers": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/GroupMembers",
+      "params": [
+        {
+          "name": "GroupId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Groups": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/Groups",
+      "params": [
+        {
+          "name": "GroupIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "RemoveUsersFromRole": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/RemoveUsersFromRole",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Role",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Roles": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/Roles",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SaveCctvCode": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/SaveCctvCode",
+      "params": [
+        {
+          "name": "Cause",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Code",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CodeGroup",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Grade",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HRange",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LoRange",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValueField",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UnlockUsers": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UnlockUsers",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateAttachmentMapping": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UpdateAttachmentMapping",
+      "params": [
+        {
+          "name": "Alias",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Source",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateCodeDescription": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UpdateCodeDescription",
+      "params": [
+        {
+          "name": "Code",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateCodeDescScore": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UpdateCodeDescScore",
+      "params": [
+        {
+          "name": "Code",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Score",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateCodeType": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UpdateCodeType",
+      "params": [
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Module",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateDescScore": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UpdateDescScore",
+      "params": [
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Score",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateDomain": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UpdateDomain",
+      "params": [
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DomainName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapServiceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateGroup": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UpdateGroup",
+      "params": [
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "EmployeeSids to add to the group"
+        },
+        {
+          "name": "GISRight",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "GroupName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapServiceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdatePreference": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UpdatePreference",
+      "params": [
+        {
+          "name": "Preference",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Value",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UserRoles": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UserRoles",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UsersInRole": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UsersInRole",
+      "params": [
+        {
+          "name": "Role",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UserStatus": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Designer/UserStatus",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

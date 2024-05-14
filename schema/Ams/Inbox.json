@@ -1,0 +1,655 @@
+{
+  "Inbox": {
+    "CopyWidgetContainerTab": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/CopyWidgetContainerTab",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateWidget": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/CreateWidget",
+      "params": [
+        {
+          "name": "WidgetType",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ZoneId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateWidgetContainer": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/CreateWidgetContainer",
+      "params": [
+        {
+          "name": "ContainerType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TabId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateWidgetContainerTab": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/CreateWidgetContainerTab",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TabType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateWidgetZone": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/CreateWidgetZone",
+      "params": [
+        {
+          "name": "ContainerId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteWidget": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/DeleteWidget",
+      "params": [
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteWidgetContainer": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/DeleteWidgetContainer",
+      "params": [
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteWidgetContainerTab": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/DeleteWidgetContainerTab",
+      "params": [
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteWidgetZone": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/DeleteWidgetZone",
+      "params": [
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "MoveWidget": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/MoveWidget",
+      "params": [
+        {
+          "name": "Count",
+          "type": "Int32",
+          "required": false,
+          "comments": "Number of times to move in a given direction, defaults to 1"
+        },
+        {
+          "name": "Direction",
+          "type": "Int32",
+          "required": true,
+          "comments": "Can only move up and down (0 or 2)."
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "MoveWidgetContainerTab": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/MoveWidgetContainerTab",
+      "params": [
+        {
+          "name": "Count",
+          "type": "Int32",
+          "required": false,
+          "comments": "Number of times to move in a given direction, defaults to 1"
+        },
+        {
+          "name": "Direction",
+          "type": "Int32",
+          "required": true,
+          "comments": "Can only move right and left (1 or 3)."
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "MoveWidgetZone": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/MoveWidgetZone",
+      "params": [
+        {
+          "name": "Count",
+          "type": "Int32",
+          "required": false,
+          "comments": "Number of times to move in a given direction, defaults to 1"
+        },
+        {
+          "name": "Direction",
+          "type": "Int32",
+          "required": true,
+          "comments": "Can only move right and left (1 or 3)."
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateChartWidget": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/UpdateChartWidget",
+      "params": [
+        {
+          "name": "Analysis",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BottomMargin",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChartType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Height",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Kind",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeftMargin",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SearchId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TextRotation",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XColumn",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YColumn",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateHtmlWidget": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/UpdateHtmlWidget",
+      "params": [
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Height",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Html",
+          "type": "String",
+          "required": false,
+          "comments": "Must be escaped string, i.e. javascript encodeURIComponent, c# System.Uri.EscapeDataString"
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Url",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidgetZoneId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateNotesWidget": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/UpdateNotesWidget",
+      "params": [
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Height",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Notes",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidgetZoneId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateReportLinksWidget": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/UpdateReportLinksWidget",
+      "params": [
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Height",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReportIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidgetZoneId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateSearchResultsWidget": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/UpdateSearchResultsWidget",
+      "params": [
+        {
+          "name": "AutosizeColumns",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Height",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "RefreshInterval",
+          "type": "Decimal",
+          "required": false,
+          "comments": "Internval in minutes to auto refresh inbox result grid"
+        },
+        {
+          "name": "Rows",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SearchId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SearchType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SearchView",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateWeatherWidget": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/UpdateWeatherWidget",
+      "params": [
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidgetZoneId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateWidgetContainer": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/UpdateWidgetContainer",
+      "params": [
+        {
+          "name": "ContainerType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateWidgetContainerTab": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/UpdateWidgetContainerTab",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TabType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateWidgetZone": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Inbox/UpdateWidgetZone",
+      "params": [
+        {
+          "name": "Header",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Position",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidgetContainerId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Width",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

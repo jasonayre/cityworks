@@ -1,0 +1,1 @@
+npx ts-json-schema-generator --path '/Users/jasonayre/code/Cityworks-API-Trainings/LiveWeb/JavaScript/apiexample-complete/cw-sdk/api/interfaces/**/*.ts' --type '*' > types.json

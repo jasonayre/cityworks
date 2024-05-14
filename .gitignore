@@ -1,0 +1,13 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/scratch/
+.DS_Store
+bin/json_schema_parse.rb
+bin/prepare_ruby_schema.rb
+/sdk_parser/

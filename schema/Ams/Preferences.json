@@ -1,0 +1,102 @@
+{
+  "Preferences": {
+    "Global": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Preferences/Global",
+      "params": [
+        {
+          "name": "Categories",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PreferenceNames",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "HideDefaultLogin": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Preferences/HideDefaultLogin",
+      "params": [
+
+      ]
+    },
+    "Mobile": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Preferences/Mobile",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Defaults to current user's domainId"
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": "Defaults to current user's employeeSid"
+        }
+      ]
+    },
+    "User": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Preferences/User",
+      "params": [
+        {
+          "name": "Categories",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PreferenceNames",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UserSave": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Preferences/UserSave",
+      "params": [
+        {
+          "name": "Category",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Element",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

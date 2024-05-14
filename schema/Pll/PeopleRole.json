@@ -1,0 +1,39 @@
+{
+  "PeopleRole": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/PeopleRole/Add",
+      "params": [
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequiredFields",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RoleCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "RoleDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TableName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

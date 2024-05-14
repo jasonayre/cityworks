@@ -1,0 +1,21 @@
+{
+  "ContractorPll": {
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/ContractorPll/SearchObject",
+      "params": [
+        {
+          "name": "BusinessName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

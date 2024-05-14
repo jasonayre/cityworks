@@ -1,0 +1,57 @@
+{
+  "EurlQuery": {
+    "FindReplaceConfigurationText": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/EurlQuery/FindReplaceConfigurationText",
+      "params": [
+        {
+          "name": "Configuration",
+          "type": "String",
+          "required": false,
+          "comments": "Limit updates by Configuration text, adds wildcard flags unless text already contains a '%' character, i.e. '%configurationValue%'"
+        },
+        {
+          "name": "CreatedBySids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Limit updates by eURL definition owner, defaults to current user if current user is not a domain admin, can only process 900 ids at a time"
+        },
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Limit updates by domain id, can only process 900 ids at a time"
+        },
+        {
+          "name": "IsPublic",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Limit updates by IsPublic option"
+        },
+        {
+          "name": "NewText",
+          "type": "String",
+          "required": true,
+          "comments": "Replacement text for all occurrences of OldText"
+        },
+        {
+          "name": "OldText",
+          "type": "String",
+          "required": true,
+          "comments": "Text to find in Eurl Query Definition Configuration"
+        },
+        {
+          "name": "QueryDefinitionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Limit updates by query defintion id, can only process 900 ids at a time"
+        },
+        {
+          "name": "QueryIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Limit updates by query id, can only process 900 ids at a time"
+        }
+      ]
+    }
+  }
+}

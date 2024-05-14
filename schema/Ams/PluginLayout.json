@@ -1,0 +1,48 @@
+{
+  "PluginLayout": {
+    "Definition": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PluginLayout/Definition",
+      "params": [
+        {
+          "name": "Id",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Definitions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PluginLayout/Definitions",
+      "params": [
+        {
+          "name": "Ids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Public": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PluginLayout/Public",
+      "params": [
+        {
+          "name": "Id",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "PublicDefinitions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PluginLayout/PublicDefinitions",
+      "params": [
+        {
+          "name": "Ids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

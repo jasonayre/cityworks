@@ -1,0 +1,125 @@
+{
+  "CaseStatus": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseStatus/Add",
+      "params": [
+        {
+          "name": "CaseStatus",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StatusCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StatusDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseStatus/Delete",
+      "params": [
+        {
+          "name": "CaseStatusId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseStatus/Search",
+      "params": [
+        {
+          "name": "CaseStatusId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StatusCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StatusDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseStatus/SearchObject",
+      "params": [
+        {
+          "name": "CaseStatusId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StatusCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StatusDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseStatus/Update",
+      "params": [
+        {
+          "name": "CaseStatus",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaseStatusId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StatusCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StatusDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

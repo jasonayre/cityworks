@@ -1,0 +1,226 @@
+{
+  "Security": {
+    "AreContractPermissionsEnabled": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/AreContractPermissionsEnabled",
+      "params": [
+
+      ]
+    },
+    "AreProjectPermissionsEnabled": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/AreProjectPermissionsEnabled",
+      "params": [
+
+      ]
+    },
+    "Contract": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/Contract",
+      "params": [
+        {
+          "name": "ContractId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Contracts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/Contracts",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Employee": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/Employee",
+      "params": [
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Inspection": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/Inspection",
+      "params": [
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Inspections": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/Inspections",
+      "params": [
+        {
+          "name": "InspectionIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionTemplate": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/InspectionTemplate",
+      "params": [
+        {
+          "name": "InspTemplateId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionTemplates": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/InspectionTemplates",
+      "params": [
+        {
+          "name": "InspTemplateIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Problem": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/Problem",
+      "params": [
+        {
+          "name": "ProblemSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Problems": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/Problems",
+      "params": [
+        {
+          "name": "ProblemSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Projects": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/Projects",
+      "params": [
+        {
+          "name": "ProjectIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/Search",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Default is current user domain id"
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ServiceRequest": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/ServiceRequest",
+      "params": [
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ServiceRequests": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/ServiceRequests",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "StoreroomAccess": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/StoreroomAccess",
+      "params": [
+        {
+          "name": "StoreDomainId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrder": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/WorkOrder",
+      "params": [
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderBySid": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/WorkOrderBySid",
+      "params": [
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrders": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/WorkOrders",
+      "params": [
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderTemplate": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Security/WorkOrderTemplate",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WOTemplateId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

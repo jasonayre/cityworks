@@ -1,0 +1,27 @@
+{
+  "ActivityNotification": {
+    "User": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ActivityNotification/User",
+      "params": [
+
+      ]
+    },
+    "UserWatching": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ActivityNotification/UserWatching",
+      "params": [
+        {
+          "name": "ActivityId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ActivityType",
+          "type": "NotificationActivityType",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

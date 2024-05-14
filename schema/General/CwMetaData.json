@@ -1,0 +1,21 @@
+{
+  "CwMetaData": {
+    "ByTableNameSids": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/CwMetaData/ByTableNameSids",
+      "params": [
+        {
+          "name": "Ids",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TableName",
+          "type": "String",
+          "required": true,
+          "comments": "INSPECTION, REQUEST, WORKORDER require View permission on the activities"
+        }
+      ]
+    }
+  }
+}

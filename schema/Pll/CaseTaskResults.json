@@ -1,0 +1,223 @@
+{
+  "CaseTaskResults": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTaskResults/Add",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaseStatus",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseStatusId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaTaskId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CloseTaskFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExtendExpirationDateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InsertFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextTaskFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReInsertFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResultCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ResultDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResultDisplay",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResultID",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ResultSetID",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SkipTaskFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StatusCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaTaskIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTaskResults/ByCaTaskIds",
+      "params": [
+        {
+          "name": "CaTaskIds",
+          "type": "List<Int64>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTaskResults/SearchObject",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseStatus",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseStatusId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaTaskId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaTaskResultsId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CloseTaskFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExtendExpirationDateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InsertFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextTaskFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReInsertFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResultCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResultDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResultDisplay",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResultID",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResultSetID",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SkipTaskFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StatusCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

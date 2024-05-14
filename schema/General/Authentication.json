@@ -1,0 +1,217 @@
+{
+  "Authentication": {
+    "ApiVersion": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/ApiVersion",
+      "params": [
+
+      ]
+    },
+    "Authenticate": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/Authenticate",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Expires",
+          "type": "Int64",
+          "required": false,
+          "comments": "Authenticate for a specified number of milliseconds"
+        },
+        {
+          "name": "LoginName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Password",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StoreDomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AuthenticateGisToken": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/AuthenticateGisToken",
+      "params": [
+        {
+          "name": "Expires",
+          "type": "Int64",
+          "required": false,
+          "comments": "Authenticate to Cityworks for a specified number of milliseconds, defaults to 2 weeks"
+        },
+        {
+          "name": "GisToken",
+          "type": "String",
+          "required": true,
+          "comments": "Gis Oauth2 access token"
+        },
+        {
+          "name": "GisTokenUrl",
+          "type": "String",
+          "required": true,
+          "comments": "Base url to GIS server (not the '/generateToken' endpoint)"
+        },
+        {
+          "name": "LoginName",
+          "type": "String",
+          "required": true,
+          "comments": "Gis user name, should match a Cityworks employee login name"
+        }
+      ]
+    },
+    "AuthenticateTidToken": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/AuthenticateTidToken",
+      "params": [
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": "user email, should match a Cityworks employee email"
+        },
+        {
+          "name": "Expires",
+          "type": "Int64",
+          "required": false,
+          "comments": "Authenticate to Cityworks for a specified number of milliseconds, defaults to 2 weeks"
+        },
+        {
+          "name": "TidToken",
+          "type": "String",
+          "required": true,
+          "comments": "Tid token"
+        },
+        {
+          "name": "Url",
+          "type": "String",
+          "required": true,
+          "comments": "Base url to Tid server"
+        }
+      ]
+    },
+    "CityworksOnlineAuthenticate": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/CityworksOnlineAuthenticate",
+      "params": [
+        {
+          "name": "LoginName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Password",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CityworksOnlineSites": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/CityworksOnlineSites",
+      "params": [
+        {
+          "name": "LoginName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Password",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Domains": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/Domains",
+      "params": [
+
+      ]
+    },
+    "GetToken": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/GetToken",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Expires",
+          "type": "Int64",
+          "required": false,
+          "comments": "Authenticate for a specified number of milliseconds"
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StoreDomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Groups": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/Groups",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Defaults to current user domainId"
+        }
+      ]
+    },
+    "User": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/User",
+      "params": [
+        {
+          "name": "LoginName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Validate": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/Validate",
+      "params": [
+        {
+          "name": "Token",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Version": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Authentication/Version",
+      "params": [
+
+      ]
+    }
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "CasePeople": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePeople/Add",
+      "params": [
+        {
+          "name": "AddressLine1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressLine2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressLine3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddToPeople",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Company",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FaxNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PeopleId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneHome",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneMobile",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneWork",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneWorkExt",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RoleIds",
+          "type": "List<Int64>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WebSiteUrl",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePeople/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePeople/Delete",
+      "params": [
+        {
+          "name": "CaPeopleId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePeople/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePeople/Search",
+      "params": [
+        {
+          "name": "AddressLine1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressLine2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaPeopleId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CountryName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneHome",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneMobile",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneWork",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RoleCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RoleDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RoleId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePeople/SearchObject",
+      "params": [
+        {
+          "name": "AddressLine1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressLine2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaPeopleId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CountryName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneHome",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneMobile",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneWork",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RoleCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RoleDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RoleId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

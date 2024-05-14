@@ -1,0 +1,389 @@
+{
+  "CaseType": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseType/Add",
+      "params": [
+        {
+          "name": "AnonymousFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AppendExpiryDateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AutoExtExprFromInsp",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AutoNumberFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BLicenseFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseGroup",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepartmentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DivisionId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitialCaseStatusId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InTakeExpirationTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberingGroupId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReCalcExpirationStatus",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReCalcExpirationTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RegisteredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RemoveTempCharacterStatus",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TableName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseTempCharacter",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "GetList": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseType/GetList",
+      "params": [
+        {
+          "name": "FilterColumn",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FilterOperator",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FilterValue",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupBy",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HavingCondition",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PageNumber",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PageSize",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SingleRecordFlag",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SortColumn",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SortDirection",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WhereClause",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseType/Search",
+      "params": [
+        {
+          "name": "CaseType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseType/SearchObject",
+      "params": [
+        {
+          "name": "CaseType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseType/Update",
+      "params": [
+        {
+          "name": "AnonymousFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AppendExpiryDateFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AutoExtExprFromInsp",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AutoNumberFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BLicenseFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseGroup",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepartmentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DivisionId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitialCaseStatusId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InTakeExpirationTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumberingGroupId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReCalcExpirationStatus",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReCalcExpirationTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RegisteredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RemoveTempCharacterStatus",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TableName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseTempCharacter",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

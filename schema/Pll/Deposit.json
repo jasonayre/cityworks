@@ -1,0 +1,45 @@
+{
+  "Deposit": {
+    "All": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Deposit/All",
+      "params": [
+
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Deposit/Search",
+      "params": [
+        {
+          "name": "AccountCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepositCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepositDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepositId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepositTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

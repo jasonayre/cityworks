@@ -1,0 +1,1063 @@
+{
+  "Entity": {
+    "AddAlias": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/AddAlias",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LayerName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddGroupAlias": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/AddGroupAlias",
+      "params": [
+        {
+          "name": "Alias",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddIdentifier": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/AddIdentifier",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Identifier",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddIdentifiers": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/AddIdentifiers",
+      "params": [
+        {
+          "name": "Identifiers",
+          "type": "List<EntityIdentifier>",
+          "required": false,
+          "comments": "List of identifiers to add (Id property is ignored)"
+        }
+      ]
+    },
+    "AddSplit": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/AddSplit",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewOid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldOid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AliasAssets": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/AliasAssets",
+      "params": [
+        {
+          "name": "Aliases",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Aliases": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Aliases",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AllAliases": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/AllAliases",
+      "params": [
+
+      ]
+    },
+    "AllGroupAliases": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/AllGroupAliases",
+      "params": [
+
+      ]
+    },
+    "AssetCostHistory": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/AssetCostHistory",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInspections",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeWorkOrders",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Attributes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Attributes",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ChildPaths": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/ChildPaths",
+      "params": [
+        {
+          "name": "ChildType",
+          "type": "String",
+          "required": false,
+          "comments": "Child enitity type to terminate at, if empty will return as many children as possible"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityTypes",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Children": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Children",
+      "params": [
+        {
+          "name": "ChildType",
+          "type": "String",
+          "required": false,
+          "comments": "Child enitity type to terminate at, if empty will return as many children as possible"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntitySids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Must provide EntityUids or EntitySids"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Must provide EntityUids or EntitySids"
+        },
+        {
+          "name": "Generations",
+          "type": "Int32",
+          "required": false,
+          "comments": "0 (default) get all generations, otherwise stop after the number specified"
+        },
+        {
+          "name": "IgnoreEntityTypes",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Ignore specific child entity types and their descendants"
+        }
+      ]
+    },
+    "CircularParentChildConfigurations": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/CircularParentChildConfigurations",
+      "params": [
+
+      ]
+    },
+    "CloneWorkOrderEntities": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/CloneWorkOrderEntities",
+      "params": [
+        {
+          "name": "Entities",
+          "type": "List<EntityUidSidUpdate>",
+          "required": true,
+          "comments": "Destination Entity Sid or Uid"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": "Source Entity Type"
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": true,
+          "comments": "Source Entity Uid"
+        },
+        {
+          "name": "WorkOrderEntities",
+          "type": "List<WorkOrderEntityBase>",
+          "required": false,
+          "comments": "Optional - Destination WorkOrderEntity information to use instead of querying the gis, make sure the entity type and sid/uid match an entities record"
+        }
+      ]
+    },
+    "Configuration": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Configuration",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityTypes",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "GisFieldAliases",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Populate FieldAlias with gis field alias names"
+        },
+        {
+          "name": "MaximumDateModified",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumDateModified",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CostHistory": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/CostHistory",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CostTotal": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/CostTotal",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInspections",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include Inspection Costs, default is true"
+        },
+        {
+          "name": "IncludeWorkOrders",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include Work Order Costs, default is true"
+        }
+      ]
+    },
+    "DirectParent": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/DirectParent",
+      "params": [
+        {
+          "name": "EntitySids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Must provide EntityUids or EntitySids"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Must provide EntityUids or EntitySids"
+        },
+        {
+          "name": "ParentType",
+          "type": "String",
+          "required": false,
+          "comments": "Defaults to first Cityworks configured parent type"
+        },
+        {
+          "name": "ReturnGeometry",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Set returnGeometry=true/false when querying gis, default is true"
+        }
+      ]
+    },
+    "DistinctValues": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/DistinctValues",
+      "params": [
+        {
+          "name": "Attribute",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DateAsEpoch",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Convert date to epoch (milliseconds since 01-01-1970), default is false"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DomainTypes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/DomainTypes",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Defaults to user's domain id"
+        }
+      ]
+    },
+    "EntityUidField": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/EntityUidField",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "EntityUrlInfos": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/EntityUrlInfos",
+      "params": [
+        {
+          "name": "EntityTypes",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "FilterRecordToWorkOrderEntity": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/FilterRecordToWorkOrderEntity",
+      "params": [
+        {
+          "name": "IncludeConfiguration",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include entity configuration in each result"
+        },
+        {
+          "name": "Items",
+          "type": "List<FilterRecordToWorkOrderEntitiyRequest>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "FiveNumberSummary": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/FiveNumberSummary",
+      "params": [
+        {
+          "name": "Attribute",
+          "type": "String",
+          "required": true,
+          "comments": "field must be numeric. can also use date field using Epoch numbers"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "GetByIdentifier": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/GetByIdentifier",
+      "params": [
+        {
+          "name": "Identifier",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "GetByIdentifiers": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/GetByIdentifiers",
+      "params": [
+        {
+          "name": "Identifiers",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "GISAttributes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/GISAttributes",
+      "params": [
+        {
+          "name": "EntitySid",
+          "type": "Int32",
+          "required": false,
+          "comments": "Must provide EntityUid or EntitySid"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": false,
+          "comments": "Must provide EntityUid or EntitySid"
+        },
+        {
+          "name": "ReadableValues",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Return if true, will return CodedDomain Name value, otherwise returns CodedDomain Code value"
+        }
+      ]
+    },
+    "GroupAliases": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/GroupAliases",
+      "params": [
+        {
+          "name": "GroupName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "GroupByType": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/GroupByType",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Will return Entity Group if it is in Domain"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Groups": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Groups",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionCostHistory": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/InspectionCostHistory",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeCanceledActivities",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include costs for canceled activities. Default is false."
+        },
+        {
+          "name": "IncludeOpenActivities",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include costs for open activities. Default is false."
+        }
+      ]
+    },
+    "Orphans": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Orphans",
+      "params": [
+        {
+          "name": "ChildType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": "maximum number of records returned, null will return all records (default)"
+        },
+        {
+          "name": "ParentType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "RequiresFeatureAccess",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Does the relationship require feature access be enabled, default is true. (i.e. use true if results will be used in equipment changeout)"
+        }
+      ]
+    },
+    "ParentPaths": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/ParentPaths",
+      "params": [
+        {
+          "name": "EntityTypes",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ParentType",
+          "type": "String",
+          "required": false,
+          "comments": "Parent enitity type to terminate at, if empty will return as many parents as possible"
+        },
+        {
+          "name": "RequireParentFeature",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Only return paths for records related to features, default is true"
+        }
+      ]
+    },
+    "Parents": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Parents",
+      "params": [
+        {
+          "name": "EntitySids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Must provide EntityUids or EntitySids"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Must provide EntityUids or EntitySids"
+        },
+        {
+          "name": "Generations",
+          "type": "Int32",
+          "required": false,
+          "comments": "0 (default) get all generations, otherwise stop after the number specified"
+        },
+        {
+          "name": "ParentType",
+          "type": "String",
+          "required": false,
+          "comments": "Parent enitity type to terminate at, if empty will return as many parents as possible"
+        },
+        {
+          "name": "RequireParentFeature",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Only return paths for records related to features, default is true"
+        },
+        {
+          "name": "ReturnGeometry",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Set returnGeometry=true/false when querying gis, default is true"
+        }
+      ]
+    },
+    "ProcessSplits": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/ProcessSplits",
+      "params": [
+        {
+          "name": "Ids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "PwEntities": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/PwEntities",
+      "params": [
+        {
+          "name": "Codes",
+          "type": "List<String>",
+          "required": true,
+          "comments": "Entity types, layer names, alias names, etc"
+        }
+      ]
+    },
+    "RemoveAlias": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/RemoveAlias",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LayerName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "RemoveGroupAlias": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/RemoveGroupAlias",
+      "params": [
+        {
+          "name": "Alias",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Resolve": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Resolve",
+      "params": [
+        {
+          "name": "Entities",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Filter return list by specific entity types"
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Search",
+      "params": [
+        {
+          "name": "Attributes",
+          "type": "List<String>",
+          "required": false,
+          "comments": "filter attribute fields, defaults to return all fields"
+        },
+        {
+          "name": "DateAsEpoch",
+          "type": "Boolean",
+          "required": false,
+          "comments": "return date values as epoch"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": "maximum number of records returned when Oids or Uids are not provided"
+        },
+        {
+          "name": "Oids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReturnGeometry",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Set returnGeometry=true/false when querying gis, default is true"
+        },
+        {
+          "name": "Uids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchAsWorkOrderEntity": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/SearchAsWorkOrderEntity",
+      "params": [
+        {
+          "name": "Attributes",
+          "type": "List<String>",
+          "required": false,
+          "comments": "filter attribute fields, defaults to return all fields"
+        },
+        {
+          "name": "DateAsEpoch",
+          "type": "Boolean",
+          "required": false,
+          "comments": "return date values as epoch"
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncludeLatLon",
+          "type": "Boolean",
+          "required": false,
+          "comments": "project XY to geographic coordinates and add to the Attributes collection. (X = CwLongitude, Y = CwLatitude)"
+        },
+        {
+          "name": "IncludeParent",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include parent feature if found, default is true"
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": "maximum number of records returned when Oids or Uids are not provided"
+        },
+        {
+          "name": "Oids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReturnGeometry",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Set returnGeometry=true/false when querying gis, default is true"
+        },
+        {
+          "name": "Uids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SplitEntities": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/SplitEntities",
+      "params": [
+
+      ]
+    },
+    "Splits": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Splits",
+      "params": [
+        {
+          "name": "EndDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewOid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NewUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldOid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OldUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SubTypes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/SubTypes",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "TypeRelationships": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/TypeRelationships",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Types": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/Types",
+      "params": [
+        {
+          "name": "EntityGroup",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityGroups",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityTableTypes",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "1 = Feature, 2 = Object, 3 = Other"
+        }
+      ]
+    },
+    "VisibleFields": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/VisibleFields",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkActivityHistory": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Entity/WorkActivityHistory",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInspections",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include inspections, default is true"
+        },
+        {
+          "name": "IncludeStandardInspections",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include standard inspections, default is true"
+        },
+        {
+          "name": "IncludeWorkOrders",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include work orders, default is true"
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": "maximum number of records returned"
+        },
+        {
+          "name": "OnlyOpenWAs",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Only search for open work activities"
+        }
+      ]
+    }
+  }
+}

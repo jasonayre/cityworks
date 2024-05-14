@@ -1,0 +1,265 @@
+{
+  "CaseViolations": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseViolations/Add",
+      "params": [
+        {
+          "name": "CaFeeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CaTaskId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CompletedBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCompleted",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateIssued",
+          "type": "DateTime",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Issuedby",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RemedialText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ViolationId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ViolationText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseViolations/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseViolations/ByCaObjectIds",
+      "params": [
+        {
+          "name": "CaObjectIds",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseViolations/ByIds",
+      "params": [
+        {
+          "name": "CaViolationIds",
+          "type": "List<Int64>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CompleteViolations": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseViolations/CompleteViolations",
+      "params": [
+        {
+          "name": "CaViolationId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CompletedBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCompleted",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseViolations/Delete",
+      "params": [
+        {
+          "name": "CaViolationId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseViolations/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseViolations/Search",
+      "params": [
+        {
+          "name": "CaTaskId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaViolationId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RemedialText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ViolationDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ViolationText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ViolationType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseViolations/Update",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaTaskId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaViolationId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CompletedBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCompleted",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateIssued",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Issuedby",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RemedialText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ViolationId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ViolationText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

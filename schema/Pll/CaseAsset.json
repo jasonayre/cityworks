@@ -1,0 +1,192 @@
+{
+  "CaseAsset": {
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAsset/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAsset/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAsset/Search",
+      "params": [
+        {
+          "name": "Address",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssetId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssetObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaAssetId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureAssetId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureClass",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LegacyId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TileNo",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Xcoord",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ycoord",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAsset/SearchObject",
+      "params": [
+        {
+          "name": "Address",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssetId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssetObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaAssetId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureAssetId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureClass",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LegacyId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TileNo",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Xcoord",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ycoord",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

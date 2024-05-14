@@ -1,0 +1,21 @@
+{
+  "WebHookEvent": {
+    "ProcessMessages": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/WebHookEvent/ProcessMessages",
+      "params": [
+        {
+          "name": "Delete",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Automatically delete messages that complete with successful execution, default is false"
+        },
+        {
+          "name": "Ids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": "List of MessageQueueId values"
+        }
+      ]
+    }
+  }
+}

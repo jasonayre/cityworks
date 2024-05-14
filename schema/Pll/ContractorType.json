@@ -1,0 +1,56 @@
+{
+  "ContractorType": {
+    "All": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/ContractorType/All",
+      "params": [
+
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/ContractorType/Search",
+      "params": [
+        {
+          "name": "ContractorDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/ContractorType/SearchObject",
+      "params": [
+        {
+          "name": "ContractorDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

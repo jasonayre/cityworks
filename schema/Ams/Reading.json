@@ -1,0 +1,108 @@
+{
+  "Reading": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Reading/Add",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Reading",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReadingName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByEntity": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Reading/ByEntity",
+      "params": [
+        {
+          "name": "EntityId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ReadingName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Configuration": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Reading/Configuration",
+      "params": [
+        {
+          "name": "EntityIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Reading/Update",
+      "params": [
+        {
+          "name": "ReadingId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WOReading",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

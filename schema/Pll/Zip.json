@@ -1,0 +1,79 @@
+{
+  "Zip": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Zip/Add",
+      "params": [
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Zip/Delete",
+      "params": [
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Zip/Update",
+      "params": [
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

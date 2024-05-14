@@ -1,0 +1,523 @@
+{
+  "Query": {
+    "AddBoundary": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/AddBoundary",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Json",
+          "type": "String",
+          "required": true,
+          "comments": "Polygon JSON, assumes polygon is in the Cityworks spatial reference, it will not be reprojected"
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Builder": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/Builder",
+      "params": [
+        {
+          "name": "BoundaryId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BoundaryJson",
+          "type": "String",
+          "required": false,
+          "comments": "Polygon JSON, assumes polygon is in the Cityworks spatial reference, it will not be reprojected"
+        },
+        {
+          "name": "ClipType",
+          "type": "BoundaryClipType",
+          "required": false,
+          "comments": "Polygon clipping method, defaults to 'Intersection'"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InsideBoundary",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Return data inside or outside the boundary polygon, defaults to inside."
+        },
+        {
+          "name": "Page",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PageSize",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "QueryId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Saved query id. Must provide QueryId and/or QueryValue"
+        },
+        {
+          "name": "QueryValue",
+          "type": "String",
+          "required": false,
+          "comments": "Query syntax. Must provide QueryId and/or QueryValue"
+        },
+        {
+          "name": "SortDescending",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SortField",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Variables",
+          "type": "DynamicVariableMap",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/ByIds",
+      "params": [
+        {
+          "name": "IncludeQuery",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, then include the query JSON, otherwise query JSON will be null. Default is true."
+        },
+        {
+          "name": "QueryIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteBoundaries": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/DeleteBoundaries",
+      "params": [
+        {
+          "name": "BoundaryIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Query": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/Query",
+      "params": [
+        {
+          "name": "BoundaryId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BoundaryJson",
+          "type": "String",
+          "required": false,
+          "comments": "Polygon JSON, assumes polygon is in the Cityworks spatial reference, it will not be reprojected"
+        },
+        {
+          "name": "ClipType",
+          "type": "BoundaryClipType",
+          "required": false,
+          "comments": "Polygon clipping method, defaults to 'Intersection'"
+        },
+        {
+          "name": "InsideBoundary",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Return data inside or outside the boundary polygon, defaults to inside."
+        },
+        {
+          "name": "Page",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PageSize",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "QueryValue",
+          "type": "String",
+          "required": true,
+          "comments": "Query syntax"
+        },
+        {
+          "name": "RecordCountOnly",
+          "type": "Boolean",
+          "required": false,
+          "comments": "only get record count, default is false"
+        },
+        {
+          "name": "ResponseFields",
+          "type": "DynamicResponseDefinition",
+          "required": false,
+          "comments": "See the individual query schema for the properties of this object"
+        },
+        {
+          "name": "SortDescending",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SortField",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Variables",
+          "type": "DynamicVariableMap",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "QueryBoundaries": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/QueryBoundaries",
+      "params": [
+        {
+          "name": "BoundaryIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "QueryBoundaryIdNames": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/QueryBoundaryIdNames",
+      "params": [
+        {
+          "name": "BoundaryIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "QuerySchema": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/QuerySchema",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Value used to determine QueryFieldConfiguration for schema fields"
+        },
+        {
+          "name": "QueryType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "QueryTypeInformation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/QueryTypeInformation",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "defaults to current user's domain id"
+        },
+        {
+          "name": "IncludeDefaultSchemas",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include Cityworks schemas, Work Order, Service Request, etc. Default is true."
+        },
+        {
+          "name": "IncludeGisSchemas",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include gis schemas. Default is true."
+        }
+      ]
+    },
+    "QueryTypes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/QueryTypes",
+      "params": [
+
+      ]
+    },
+    "RunById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/RunById",
+      "params": [
+        {
+          "name": "BoundaryId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BoundaryJson",
+          "type": "String",
+          "required": false,
+          "comments": "Polygon JSON, assumes polygon is in the Cityworks spatial reference, it will not be reprojected"
+        },
+        {
+          "name": "ClipType",
+          "type": "BoundaryClipType",
+          "required": false,
+          "comments": "Polygon clipping method, defaults to 'Intersection'"
+        },
+        {
+          "name": "InsideBoundary",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Return data inside or outside the boundary polygon, defaults to inside."
+        },
+        {
+          "name": "Page",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PageSize",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "QueryId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "QueryValue",
+          "type": "String",
+          "required": false,
+          "comments": "Properly formatted query syntax to be appended to the existing query. Must be the same query type as the existing query."
+        },
+        {
+          "name": "RecordCountOnly",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ResponseFields",
+          "type": "DynamicResponseDefinition",
+          "required": false,
+          "comments": "See the individual query schema for the properties of this object"
+        },
+        {
+          "name": "SortDescending",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SortField",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Variables",
+          "type": "DynamicVariableMap",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SavedQueries": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/SavedQueries",
+      "params": [
+        {
+          "name": "CreatedOnly",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, then include only the queries that the current user created. If false, also include queries shared with current user."
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "If populated, make sure gis saved query asset is in selected domain."
+        },
+        {
+          "name": "IncludeQuery",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, then include the query JSON, otherwise query JSON will be null. Default is true."
+        },
+        {
+          "name": "QueryType",
+          "type": "String",
+          "required": false,
+          "comments": "If not specified then return all query types. For a list of types, use the \"QueryTypes\" method."
+        },
+        {
+          "name": "QueryTypes",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VisibleToMobile",
+          "type": "Boolean",
+          "required": false,
+          "comments": "When true, returns queries where VisibleToMobile is enabled AND visible to mobile permission is set, default is false."
+        }
+      ]
+    },
+    "SearchToQuery": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/SearchToQuery",
+      "params": [
+        {
+          "name": "AddEurl",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Create eURL for query if query type is supported by eURL and saved search is eURL enabled."
+        },
+        {
+          "name": "AllowEmptyQuery",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Create default filter when no filter is found. Default is false."
+        },
+        {
+          "name": "AllowMultipleBooleanValues",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Use all values for boolean fields even though a boolean should only have one value. Default is false and will only use the first boolean value."
+        },
+        {
+          "name": "SaveQuery",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Save query that has no errors. Default is false"
+        },
+        {
+          "name": "SearchIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateBoundary": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/UpdateBoundary",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Id",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Json",
+          "type": "String",
+          "required": false,
+          "comments": "Polygon JSON, assumes polygon is in the Cityworks spatial reference, it will not be reprojected"
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ValidateQuery": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/ValidateQuery",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Query",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Variables",
+          "type": "DynamicVariableMap",
+          "required": false,
+          "comments": "This field is required if the query contains variables. If the query contains a variable that is not in this list then then validation will fail."
+        }
+      ]
+    },
+    "ValidateResponseDefinition": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Query/ValidateResponseDefinition",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "QueryType",
+          "type": "String",
+          "required": true,
+          "comments": "QueryType corresponds to a value given in the response from the QueryTypes() API."
+        },
+        {
+          "name": "ResponseDefinition",
+          "type": "DynamicResponseDefinition",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

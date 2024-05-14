@@ -1,0 +1,69 @@
+{
+  "ExpirationType": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/ExpirationType/Add",
+      "params": [
+        {
+          "name": "AfterDays",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AfterMonths",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AfterYear",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EomFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpirationTypeCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpirationTypeDesc",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "RenewalMargin",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpecificMonthDay",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

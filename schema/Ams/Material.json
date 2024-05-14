@@ -1,0 +1,722 @@
+{
+  "Material": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/Add",
+      "params": [
+        {
+          "name": "AuditInterval",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CatClass",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Category",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CostType",
+          "type": "Int32",
+          "required": false,
+          "comments": "If Cost Type is Serial, Splittable must be false."
+        },
+        {
+          "name": "CUCategory",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultImgPath",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Detail",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpirationDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GdbSubtype",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsSerialized",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is false. Will be set to true if CostType is Serial."
+        },
+        {
+          "name": "JustificationRequired",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Manufacturer",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialUid",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "MinQuantity",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Model",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PartNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "QtyDeviancePct",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Splittable",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is false"
+        },
+        {
+          "name": "StoreDomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Use this to set in what active Storeroom Domain this material is being created in (if any)."
+        },
+        {
+          "name": "Supplier",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitCostDeviancePct",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateGis",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is false. Should only be true if IsSerialized is also true."
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "All": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/All",
+      "params": [
+        {
+          "name": "ViewableOnly",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/ById",
+      "params": [
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/ByIds",
+      "params": [
+        {
+          "name": "MaterialSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByParent": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/ByParent",
+      "params": [
+        {
+          "name": "DisplayTextDelimeter",
+          "type": "String",
+          "required": false,
+          "comments": "Seperates Code and Description when DisplayTextMode = CD, default is '~'."
+        },
+        {
+          "name": "DisplayTextMode",
+          "type": "String",
+          "required": false,
+          "comments": "C = Code, D = Description, CD = Code ~ Description"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Defaults to the current user's DomainId"
+        },
+        {
+          "name": "IncludeEmptyNodes",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeNotViewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NodeSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "RecursiveSearch",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByStoreroom": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/ByStoreroom",
+      "params": [
+        {
+          "name": "Storeroom",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByStoreroomAndId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/ByStoreroomAndId",
+      "params": [
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Storeroom",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CustomDataFields": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/CustomDataFields",
+      "params": [
+        {
+          "name": "CustFieldIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/Delete",
+      "params": [
+        {
+          "name": "MaterialSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StoreDomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        }
+      ]
+    },
+    "Keywords": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/Keywords",
+      "params": [
+        {
+          "name": "MaterialSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "MaterialBom": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/MaterialBom",
+      "params": [
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Storeroom",
+          "type": "String",
+          "required": false,
+          "comments": "If a storeroom is included, then the current storeroom stock will be set for each assembly material."
+        }
+      ]
+    },
+    "MaterialCategories": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/MaterialCategories",
+      "params": [
+
+      ]
+    },
+    "MaterialNodes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/MaterialNodes",
+      "params": [
+        {
+          "name": "DisplayTextDelimeter",
+          "type": "String",
+          "required": false,
+          "comments": "Seperates Code and Description when DisplayTextMode = CD, default is '~'."
+        },
+        {
+          "name": "DisplayTextMode",
+          "type": "String",
+          "required": false,
+          "comments": "C = Code, D = Description, CD = Code ~ Description"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncludeNotViewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/Search",
+      "params": [
+        {
+          "name": "AuditInterval",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CatClass",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "AbcCatClass enum values"
+        },
+        {
+          "name": "Category",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CostType",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "MaterialCostType enum values"
+        },
+        {
+          "name": "CUCategory",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultImgPath",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Detail",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GdbSubtype",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JustificationRequired",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Manufacturer",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialUid",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumExpirationDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumMaterialSid",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumMinQuantity",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumUnitCost",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumExpirationDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumMaterialSid",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumMinQuantity",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumUnitCost",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Model",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PartNumber",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Splittable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Supplier",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Material/Update",
+      "params": [
+        {
+          "name": "AuditInterval",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CatClass",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Category",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CostType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CUCategory",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultImgPath",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Detail",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpirationDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GdbSubtype",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsSerialized",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JustificationRequired",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Manufacturer",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "MaterialUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinQuantity",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Model",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PartNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "QtyDeviancePct",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SerialInfos",
+          "type": "List<NewMaterialSerial>",
+          "required": false,
+          "comments": "Provide serial infos when setting IsSerialized to true."
+        },
+        {
+          "name": "Splittable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StoreDomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "Supplier",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitCostDeviancePct",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateGis",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "Attachments": {
+    "AddActivityFileLink": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/AddActivityFileLink",
+      "params": [
+        {
+          "name": "ActivitySid",
+          "type": "Int64",
+          "required": true,
+          "comments": "Use WorkOrderSid for Work Orders"
+        },
+        {
+          "name": "ActivityType",
+          "type": "AttachmentType",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "AttachmentType",
+          "type": "AttachmentFileType",
+          "required": false,
+          "comments": "Defaults to 0 (ATTACHMENT). A value of 1 (SIGNATURE) is invalid"
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Path",
+          "type": "String",
+          "required": true,
+          "comments": "'http(s)://' is required for AttachmentType == 2. Use single '/' for File/UNC paths e.g. 'C:/attachments/file.pdf', '//Cityworks/attachments/file.pdf'"
+        },
+        {
+          "name": "Title",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddInspectionAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/AddInspectionAttachment",
+      "params": [
+        {
+          "name": "AttachmentType",
+          "type": "AttachmentFileType",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Filename",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AddManholeInspAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/AddManholeInspAttachment",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Filename",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ManholeInspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AddRequestAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/AddRequestAttachment",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Filename",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AddTvInspectionAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/AddTvInspectionAttachment",
+      "params": [
+        {
+          "name": "AttachmentType",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Filename",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AddTvObservationAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/AddTvObservationAttachment",
+      "params": [
+        {
+          "name": "AttachmentType",
+          "type": "AttachmentFileType",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Filename",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservationId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AddWorkOrderAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/AddWorkOrderAttachment",
+      "params": [
+        {
+          "name": "AttachmentType",
+          "type": "AttachmentFileType",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Filename",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteInspectionAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DeleteInspectionAttachments",
+      "params": [
+        {
+          "name": "AttachmentIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteManholeInspAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DeleteManholeInspAttachments",
+      "params": [
+        {
+          "name": "AttachmentIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteRequestAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DeleteRequestAttachments",
+      "params": [
+        {
+          "name": "AttachmentIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteRequisitionAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DeleteRequisitionAttachments",
+      "params": [
+        {
+          "name": "AttachmentIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StoreroomDomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Used for fetching appropriate Storeroom Group Permissions. If not set, this value defaults to user's StoreDomainId."
+        }
+      ]
+    },
+    "DeleteTvInspectionAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DeleteTvInspectionAttachments",
+      "params": [
+        {
+          "name": "AttachmentIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteTvObservationAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DeleteTvObservationAttachments",
+      "params": [
+        {
+          "name": "AttachmentIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteWorkOrderAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DeleteWorkOrderAttachments",
+      "params": [
+        {
+          "name": "AttachmentIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DownloadInspectionAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DownloadInspectionAttachment",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DownloadManholeInspAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DownloadManholeInspAttachment",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DownloadRequestAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DownloadRequestAttachment",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DownloadTvInspectionAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DownloadTvInspectionAttachment",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DownloadTvObservationAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DownloadTvObservationAttachment",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DownloadWorkOrderAttachment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/DownloadWorkOrderAttachment",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionAttachmentById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/InspectionAttachmentById",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/InspectionAttachments",
+      "params": [
+        {
+          "name": "InspectionIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ManholeInspAttachmentById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/ManholeInspAttachmentById",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ManholeInspAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/ManholeInspAttachments",
+      "params": [
+        {
+          "name": "ManholeInspectionIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "RequestAttachmentById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/RequestAttachmentById",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "RequestAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/RequestAttachments",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "TvInspectionAttachmentById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/TvInspectionAttachmentById",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "TvInspectionAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/TvInspectionAttachments",
+      "params": [
+        {
+          "name": "TvIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "TvObservationAttachmentById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/TvObservationAttachmentById",
+      "params": [
+        {
+          "name": "AttachmentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "TvObservationAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/TvObservationAttachments",
+      "params": [
+        {
+          "name": "ObservationIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderAttachments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Attachments/WorkOrderAttachments",
+      "params": [
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSids",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

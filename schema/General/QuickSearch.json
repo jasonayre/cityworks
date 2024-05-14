@@ -1,0 +1,15 @@
+{
+  "QuickSearch": {
+    "QuickSearch": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/QuickSearch/QuickSearch",
+      "params": [
+        {
+          "name": "QuickSearchText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "CasePaymentRefund": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePaymentRefund/Add",
+      "params": [
+        {
+          "name": "CaPaymentId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RefundAmount",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePaymentRefund/Delete",
+      "params": [
+        {
+          "name": "CaPaymentRefundId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePaymentRefund/Search",
+      "params": [
+        {
+          "name": "CaPaymentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaPaymentRefundId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RefundAmount",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CasePaymentRefund/Update",
+      "params": [
+        {
+          "name": "CaPaymentRefundId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Voided",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

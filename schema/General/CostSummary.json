@@ -1,0 +1,26 @@
+{
+  "CostSummary": {
+    "WorkOrderEntity": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/CostSummary/WorkOrderEntity",
+      "params": [
+        {
+          "name": "ObjectIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "List of WorkOrderEntity.ObjectId values"
+        }
+      ]
+    },
+    "WorkOrderEntitySearch": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/CostSummary/WorkOrderEntitySearch",
+      "params": [
+        {
+          "name": "SearchId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Search Definition Id"
+        }
+      ]
+    }
+  }
+}

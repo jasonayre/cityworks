@@ -1,0 +1,165 @@
+{
+  "MapService": {
+    "Configuration": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Gis/MapService/Configuration",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, check for feature server JSON data, default is true"
+        },
+        {
+          "name": "GroupId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapServiceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Security",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UserId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Domain": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Gis/MapService/Domain",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DownloadMobileMapCache": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Gis/MapService/DownloadMobileMapCache",
+      "params": [
+        {
+          "name": "MobileMapCacheId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "InitialExtent": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Gis/MapService/InitialExtent",
+      "params": [
+
+      ]
+    },
+    "InspectionConfiguration": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Gis/MapService/InspectionConfiguration",
+      "params": [
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, check for feature server JSON data, default is true"
+        },
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ServiceRequestConfiguration": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Gis/MapService/ServiceRequestConfiguration",
+      "params": [
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, check for feature server JSON data, default is true"
+        },
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "User": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Gis/MapService/User",
+      "params": [
+        {
+          "name": "AllDomains",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include services assigned to any domain the user belongs to or specific Domain if DomainId provided"
+        },
+        {
+          "name": "AllGroups",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include services assigned to any groups the user belongs to regardless of domain or specific Domain if DomainId provided"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Use specific domainId when finding domain and domain group map services."
+        },
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, check for feature server JSON data, default is true"
+        },
+        {
+          "name": "Security",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Filter return list by specific security, i.e. Office, Field, Mobile, Public, etc."
+        }
+      ]
+    },
+    "WorkOrderConfiguration": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Gis/MapService/WorkOrderConfiguration",
+      "params": [
+        {
+          "name": "GetGisData",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, check for feature server JSON data, default is true"
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "Holidays": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Holidays/Add",
+      "params": [
+        {
+          "name": "Description",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Holiday",
+          "type": "DateTime",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "All": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Holidays/All",
+      "params": [
+        {
+          "name": "EndDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": "End date for including holidays, exclusive."
+        },
+        {
+          "name": "StartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": "Start date to begin including holidays from, inclusive."
+        }
+      ]
+    },
+    "ByDate": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Holidays/ByDate",
+      "params": [
+        {
+          "name": "Date",
+          "type": "DateTime",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Holidays/Delete",
+      "params": [
+        {
+          "name": "Holidays",
+          "type": "List<DateTime>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

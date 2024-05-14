@@ -1,0 +1,73 @@
+{
+  "Output": {
+    "InspectionHtml": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Output/InspectionHtml",
+      "params": [
+        {
+          "name": "Css",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrintTemplate",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ServiceRequestHtml": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Output/ServiceRequestHtml",
+      "params": [
+        {
+          "name": "Css",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrintTemplate",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderHtml": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/Output/WorkOrderHtml",
+      "params": [
+        {
+          "name": "Css",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrintTemplate",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

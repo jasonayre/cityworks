@@ -1,0 +1,83 @@
+{
+  "CaseTaskComments": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTaskComments/Add",
+      "params": [
+        {
+          "name": "CaTaskId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CommentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaTaskId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTaskComments/ByCaTaskId",
+      "params": [
+        {
+          "name": "CaTaskId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaTaskIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTaskComments/ByCaTaskIds",
+      "params": [
+        {
+          "name": "CaTaskIds",
+          "type": "List<Int64>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTaskComments/Delete",
+      "params": [
+        {
+          "name": "CaTaskCommentIds",
+          "type": "List<Int64>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseTaskComments/Update",
+      "params": [
+        {
+          "name": "CaTaskCommentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Commenttext",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

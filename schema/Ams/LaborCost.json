@@ -1,0 +1,576 @@
+{
+  "LaborCost": {
+    "AddInspectionCosts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/AddInspectionCosts",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorFixed",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorFixedCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorHoliday",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorHourly",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorOvertime",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorPerUnit",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeBenefit",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeCostCodes",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeGroupId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeHoliday",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeJobCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeOther",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeOverhead",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeOvertime",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeRegular",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeShiftDiff",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeStandby",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Estimated",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Hours",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddRequestCosts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/AddRequestCosts",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeBenefit",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeCostCodes",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeGroupId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeHoliday",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeJobCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeOther",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeOverhead",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeOvertime",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeRegular",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeShiftDiff",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeStandby",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Hours",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddWorkOrderCosts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/AddWorkOrderCosts",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorFixed",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorFixedCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorHoliday",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorHourly",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorOvertime",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorPerUnit",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeBenefit",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeCostCodes",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeGroupId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeHoliday",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeJobCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeOther",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeOverhead",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeOvertime",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeRegular",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeShiftDiff",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeStandby",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Entities",
+          "type": "List<WorkOrderEntity>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Estimated",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Hours",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CostCodes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/CostCodes",
+      "params": [
+        {
+          "name": "CommonCodesOnly",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Set to true to return only the codes that are common to ALL employees in the list, otherwise the union of all codes will be returned."
+        },
+        {
+          "name": "EmployeeSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteInspectionCosts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/DeleteInspectionCosts",
+      "params": [
+        {
+          "name": "Estimated",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteRequestCosts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/DeleteRequestCosts",
+      "params": [
+        {
+          "name": "LaborCostIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteWorkOrderCosts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/DeleteWorkOrderCosts",
+      "params": [
+        {
+          "name": "Estimated",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionCostsByInspection": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/InspectionCostsByInspection",
+      "params": [
+        {
+          "name": "Estimated",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "JobCodes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/JobCodes",
+      "params": [
+
+      ]
+    },
+    "RequestCostsByRequest": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/RequestCostsByRequest",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderCostsByWorkOrder": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/LaborCost/WorkOrderCostsByWorkOrder",
+      "params": [
+        {
+          "name": "Estimated",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSids",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

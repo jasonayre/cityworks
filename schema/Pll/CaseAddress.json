@@ -1,0 +1,417 @@
+{
+  "CaseAddress": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAddress/Add",
+      "params": [
+        {
+          "name": "Address",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssetId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssetObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CrossStreet",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateExpired",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Facility_Id",
+          "type": "String",
+          "required": false,
+          "comments": "Facility Identifier"
+        },
+        {
+          "name": "FeatureAssetId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureClass",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FeatureObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LegacyId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Level_Id",
+          "type": "String",
+          "required": false,
+          "comments": "Facility Level Identifier"
+        },
+        {
+          "name": "LndObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MasterFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObjectId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetDirection",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetFraction",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetNumber",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetPostDir",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Suite",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TileNo",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateCaseData",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateXY",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Update permit case xy after adding address, default is true."
+        },
+        {
+          "name": "XCoord",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YCoord",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZCoord",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAddress/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAddress/ByCaObjectIds",
+      "params": [
+        {
+          "name": "CaObjectIds",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAddress/Delete",
+      "params": [
+        {
+          "name": "CaAddressId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "UpdateXY",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Update permit case xy after deleting address, default is true."
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAddress/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "UpdateXY",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Update permit case xy after deleting address, default is true."
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAddress/Search",
+      "params": [
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaAddressId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetNumber",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Suite",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseAddress/SearchObject",
+      "params": [
+        {
+          "name": "AssetType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaAddressId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetNumber",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Suite",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

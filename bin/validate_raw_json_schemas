@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'pathname'
+
+# Define the path to the raw JSON schema files
+RAW_SCHEMA_PATH = Pathname.new(File.expand_path('../schema/raw', __dir__))
+
+# Recursively iterate through the raw JSON schema files
+Dir.glob("#{RAW_SCHEMA_PATH}/**/*.json").each do |file_path|
+  begin
+    # Read the JSON file
+    json_data = File.read(file_path)
+
+    # Pretty print the JSON data
+    pretty_json = JSON.pretty_generate(JSON.parse(json_data))
+    puts "File: #{file_path}"
+    puts pretty_json
+    puts "\n"
+  rescue JSON::ParserError => e
+    puts "Error parsing JSON file: #{file_path}"
+    puts e.message
+  end
+end

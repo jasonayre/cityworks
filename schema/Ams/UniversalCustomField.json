@@ -1,0 +1,226 @@
+{
+  "UniversalCustomField": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/Add",
+      "params": [
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": false,
+          "comments": "PwCodeType"
+        },
+        {
+          "name": "DefaultValue",
+          "type": "String",
+          "required": false,
+          "comments": "Default field value"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Domain administrator can create field for different domains, otherwise is the current user's domain"
+        },
+        {
+          "name": "FieldAlias",
+          "type": "String",
+          "required": false,
+          "comments": "Alias used in mobile apps"
+        },
+        {
+          "name": "FieldName",
+          "type": "String",
+          "required": true,
+          "comments": "Universal custom field name: ServiceRequest and WorkOrder: Text1-Text20, Num1-Num5, Date1-Date5. Inspection and Contract: Text1-Text10, Num1-Num5, Date1-Date5. CustomerCall: Text1-Text5"
+        },
+        {
+          "name": "SequenceId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Field sequence Id"
+        },
+        {
+          "name": "TableType",
+          "type": "Int32",
+          "required": true,
+          "comments": "UniversalCustomFieldTable enum: Contract = 0, CustomerCall = 1, Inspection = 2, Request = 3, WorkOrder = 4"
+        },
+        {
+          "name": "UseCodeDesc",
+          "type": "Int32",
+          "required": false,
+          "comments": "Display and store code or description. Code = 1 (default) or Description = 2"
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/ById",
+      "params": [
+        {
+          "name": "FieldIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": "Unique id."
+        }
+      ]
+    },
+    "ByType": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/ByType",
+      "params": [
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Defaults to the current user's domain"
+        },
+        {
+          "name": "TableTypes",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": "UniversalCustomFieldTable enum: Contract = 0, CustomerCall = 1, Inspection = 2, Request = 3, WorkOrder = 4"
+        }
+      ]
+    },
+    "Contract": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/Contract",
+      "params": [
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Defaults to the current user's domain"
+        }
+      ]
+    },
+    "CustomerCall": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/CustomerCall",
+      "params": [
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Defaults to the current user's domain"
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/Delete",
+      "params": [
+        {
+          "name": "FieldIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": "Unique ids"
+        }
+      ]
+    },
+    "Inspection": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/Inspection",
+      "params": [
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Defaults to the current user's domain"
+        }
+      ]
+    },
+    "MoveField": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/MoveField",
+      "params": [
+        {
+          "name": "Count",
+          "type": "Int32",
+          "required": false,
+          "comments": "Number of times to move in a given direction, defaults to 1"
+        },
+        {
+          "name": "Direction",
+          "type": "Int32",
+          "required": true,
+          "comments": "Can only move up and down (0 or 2)."
+        },
+        {
+          "name": "FieldId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Project": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/Project",
+      "params": [
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Defaults to the current user's domain"
+        }
+      ]
+    },
+    "ServiceRequest": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/ServiceRequest",
+      "params": [
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Defaults to the current user's domain"
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/Update",
+      "params": [
+        {
+          "name": "CodeType",
+          "type": "String",
+          "required": false,
+          "comments": "PwCodeType"
+        },
+        {
+          "name": "DefaultValue",
+          "type": "String",
+          "required": false,
+          "comments": "Default field value"
+        },
+        {
+          "name": "FieldAlias",
+          "type": "String",
+          "required": false,
+          "comments": "Alias used in mobile apps"
+        },
+        {
+          "name": "FieldId",
+          "type": "Int32",
+          "required": true,
+          "comments": "Unique id."
+        },
+        {
+          "name": "SequenceId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Field sequence Id"
+        },
+        {
+          "name": "UseCodeDesc",
+          "type": "Int32",
+          "required": false,
+          "comments": "Display and store code or description. Code = 1 (default) or Description = 2"
+        }
+      ]
+    },
+    "WorkOrder": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/UniversalCustomField/WorkOrder",
+      "params": [
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Defaults to the current user's domain"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,5716 @@
+{
+  "Contract": {
+    "AddInvoice": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/AddInvoice",
+      "params": [
+        {
+          "name": "AccountingDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Attachment",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CheckIssuedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CoverSentDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EAODate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InvoiceItems",
+          "type": "List<InvoiceItem>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InvoiceNumber",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "OffialInvoiceReceivedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PencilInvoiceReceivedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PencilInvoiceReviewedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValidateInvoiceDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddInvoiceItem": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/AddInvoiceItem",
+      "params": [
+        {
+          "name": "InvoiceId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LineItemCostId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AddLineItem": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/AddLineItem",
+      "params": [
+        {
+          "name": "ContractId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractPeriod",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FundSourceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ItemNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LineItemId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PrjUnitPrice",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjUnits",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitPrice",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Units",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitsUsed",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/ByIds",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Claims": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/Claims",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Create": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/Create",
+      "params": [
+        {
+          "name": "AccountantSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AcctManagerSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudget",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Address",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercent",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudget",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercent",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleased",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Category",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractClaims",
+          "type": "List<ContractClaimBase>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractFundSources",
+          "type": "List<ContractFundSource>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractLineItems",
+          "type": "List<ContractLineItem>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractNumber",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractSubcontractors",
+          "type": "List<ContractSubcontractor>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractSubmittals",
+          "type": "List<ContractSubmittal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractTemplateId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "District",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Duration",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationUnit",
+          "type": "Int32",
+          "required": false,
+          "comments": "RelativeDateUnit enum value"
+        },
+        {
+          "name": "EstimatedBudget",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPLInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FundingSource",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsTemplate",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriods",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercent",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercent",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PermitIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "State",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePLInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOPrefix",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "X",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Zip",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateFundSource": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/CreateFundSource",
+      "params": [
+        {
+          "name": "Amount",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FiscalYear",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FundSource",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Notes",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateSearchDefinition": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/CreateSearchDefinition",
+      "params": [
+        {
+          "name": "Accountant",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AccountantSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AccountantSidInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "AcctManager",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AcctManagerSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AcctManagerSidInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ActualBudgetIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudgetIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudgetIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudgetMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudgetMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudgetRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "ActualBudgetValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "ActualCostValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Address",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "BidBondPercentValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "BidBudgetValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "BidDepositPercentValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleased",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractNumber",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSidInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ContractTemplateId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractTemplateIdInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ContractType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "District",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "DurationUnit",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "RelativeDateUnit enum value"
+        },
+        {
+          "name": "DurationValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "EstimatedBudgetValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FundingSource",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsTemplate",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "NextWOSeqIdValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num1Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num2Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num3Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num4Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num5Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "OptionalPeriodsValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "PaymentBondPercentValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "PerformanceBondPercentValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SaveDefinition",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Save the definition at the time it is created, SearchName must be populated."
+        },
+        {
+          "name": "ScheduledFinishDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SearchName",
+          "type": "String",
+          "required": false,
+          "comments": "Search name, required if SaveDefinition is true"
+        },
+        {
+          "name": "SharedWithin",
+          "type": "Int32",
+          "required": false,
+          "comments": "Make the search available to the user's group or domain"
+        },
+        {
+          "name": "SignedDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "State",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOPrefix",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Zip",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateSubcontractor": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/CreateSubcontractor",
+      "params": [
+        {
+          "name": "Approved",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ContractorName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateApproved",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EndDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateSubmittal": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/CreateSubmittal",
+      "params": [
+        {
+          "name": "Approved",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ApproveDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReceiveDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmittalType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/Delete",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteFundSource": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/DeleteFundSource",
+      "params": [
+        {
+          "name": "FundSourceIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteInvoiceItems": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/DeleteInvoiceItems",
+      "params": [
+        {
+          "name": "InvoiceItemIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteInvoices": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/DeleteInvoices",
+      "params": [
+        {
+          "name": "InvoiceIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteLineItems": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/DeleteLineItems",
+      "params": [
+        {
+          "name": "ContractLineItemIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteSubcontractor": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/DeleteSubcontractor",
+      "params": [
+        {
+          "name": "SubcontractorIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteSubmittal": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/DeleteSubmittal",
+      "params": [
+        {
+          "name": "SubmittalIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "FundSources": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/FundSources",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "InvoiceItems": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/InvoiceItems",
+      "params": [
+        {
+          "name": "InvoiceIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Invoices": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/Invoices",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "LineItems": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/LineItems",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "LineItemSummary": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/LineItemSummary",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Move": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/Move",
+      "params": [
+        {
+          "name": "ContractId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "VcsWKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKID",
+          "type": "Int32",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT)"
+        },
+        {
+          "name": "WKT",
+          "type": "String",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT)"
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Permits": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/Permits",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/Search",
+      "params": [
+        {
+          "name": "Accountant",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AccountantSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AccountantSidInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "AcctManager",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AcctManagerSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AcctManagerSidInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ActualBudgetIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudgetIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudgetIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudgetMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudgetMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudgetRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "ActualBudgetValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualCostRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "ActualCostValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Address",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercentRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "BidBondPercentValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudgetRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "BidBudgetValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercentRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "BidDepositPercentValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleased",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractNumber",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSidInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ContractTemplateId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractTemplateIdInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ContractType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeModifiedRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "District",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "DurationUnit",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "RelativeDateUnit enum value"
+        },
+        {
+          "name": "DurationValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EstimatedBudgetRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "EstimatedBudgetValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPlInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FundingSource",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsTemplate",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqIdRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "NextWOSeqIdValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num1Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num2Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num3Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num4Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num5Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriodsRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "OptionalPeriodsValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercentRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "PaymentBondPercentValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercentRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "PerformanceBondPercentValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "State",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePlInspDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOPrefix",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Zip",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Subcontractors": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/Subcontractors",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Submittals": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/Submittals",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "UninvoicedLineItemCosts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/UninvoicedLineItemCosts",
+      "params": [
+        {
+          "name": "ContractIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/Update",
+      "params": [
+        {
+          "name": "AccountantSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AcctManagerSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualBudget",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualFinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Address",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBondPercent",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidBudget",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BidDepositPercent",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleased",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BondReleaseDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Category",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ContractNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractTemplateId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DesignDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "District",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Duration",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DurationUnit",
+          "type": "Int32",
+          "required": false,
+          "comments": "RelativeDateUnit enum value"
+        },
+        {
+          "name": "EstimatedBudget",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FinalPLInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FundingSource",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteeInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GuaranteePLInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsTemplate",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextWOSeqId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OptionalPeriods",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PaymentBondPercent",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PerformanceBondPercent",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScheduledFinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SignedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "State",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransmitDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UsePLInspDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOPrefix",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Zip",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateFundSource": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/UpdateFundSource",
+      "params": [
+        {
+          "name": "Amount",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FiscalYear",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FundSource",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FundSourceId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Notes",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateInvoice": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/UpdateInvoice",
+      "params": [
+        {
+          "name": "AccountingDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Attachment",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CheckIssuedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CoverSentDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EAODate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InvoiceId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "InvoiceNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OffialInvoiceReceivedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PencilInvoiceReceivedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PencilInvoiceReviewedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValidateInvoiceDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateInvoiceItem": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/UpdateInvoiceItem",
+      "params": [
+        {
+          "name": "InvoiceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InvoiceItemId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LineItemCostId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateLineItem": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/UpdateLineItem",
+      "params": [
+        {
+          "name": "ContractLineItemId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractPeriod",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FundSourceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ItemNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LineItemId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjUnitPrice",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjUnits",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitPrice",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Units",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitsUsed",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateSubcontractor": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/UpdateSubcontractor",
+      "params": [
+        {
+          "name": "Approved",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractorType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateApproved",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EndDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubcontractorId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateSubmittal": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/UpdateSubmittal",
+      "params": [
+        {
+          "name": "Approved",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ApproveDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReceiveDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmittalId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SubmittalType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UseOpxPermissions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/UseOpxPermissions",
+      "params": [
+
+      ]
+    },
+    "User": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Contract/User",
+      "params": [
+        {
+          "name": "IsTemplate",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Filter results by IsTemplate = true or false. Defaults to false"
+        },
+        {
+          "name": "Viewable",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Filter results by Viewable = true or false. Defaults to true"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "State": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/State/Add",
+      "params": [
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StateName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/State/Delete",
+      "params": [
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/State/Update",
+      "params": [
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "StateName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

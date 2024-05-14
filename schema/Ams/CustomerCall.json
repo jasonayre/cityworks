@@ -1,0 +1,636 @@
+{
+  "CustomerCall": {
+    "AddToRequest": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerCall/AddToRequest",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Answers",
+          "type": "List<ServiceRequestAnswer>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AptNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ccx",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ccy",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ccz",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CellPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustAddress",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustAddType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustCallback",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustCity",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustContact",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustDistrict",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustState",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustZip",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateAnswers",
+          "type": "List<ServiceRequestDateAnswer>",
+          "required": false,
+          "comments": "Used to update question answer date values. Takes precedence over Answers entry"
+        },
+        {
+          "name": "DateTimeCall",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeCallback",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeContact",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Fax",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FirstName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HomePhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsFollowUpCall",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsResident",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MiddleInitial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbDetails",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Title",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIncidentNum": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerCall/ByIncidentNum",
+      "params": [
+        {
+          "name": "IncidentNum",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByRequestId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerCall/ByRequestId",
+      "params": [
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByRequestIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerCall/ByRequestIds",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CallerQuestions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerCall/CallerQuestions",
+      "params": [
+        {
+          "name": "IncidentNums",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CallerQuestionsByRequestIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerCall/CallerQuestionsByRequestIds",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerCall/Delete",
+      "params": [
+        {
+          "name": "IncidentNum",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Move": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerCall/Move",
+      "params": [
+        {
+          "name": "IncidentNum",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "VcsWKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKT",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "MoveToRequest": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerCall/MoveToRequest",
+      "params": [
+        {
+          "name": "FromRequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncidentNums",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ToRequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerCall/Update",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Answers",
+          "type": "List<ServiceRequestAnswer>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AptNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ccx",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ccy",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Ccz",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CellPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustAddress",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustAddType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustCallback",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustCity",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustContact",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustDistrict",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustState",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustZip",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateAnswers",
+          "type": "List<ServiceRequestDateAnswer>",
+          "required": false,
+          "comments": "Used to update question answer date values. Takes precedence over Answers entry"
+        },
+        {
+          "name": "DateTimeCall",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeCallback",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeContact",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Fax",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FirstName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HomePhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncidentNum",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IsFollowUpCall",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsResident",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MiddleInitial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbDetails",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Title",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

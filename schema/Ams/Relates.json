@@ -1,0 +1,590 @@
+{
+  "Relates": {
+    "AreContractPermissionsEnabled": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/AreContractPermissionsEnabled",
+      "params": [
+
+      ]
+    },
+    "AreProjectPermissionsEnabled": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/AreProjectPermissionsEnabled",
+      "params": [
+
+      ]
+    },
+    "ByTableName": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/ByTableName",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FieldNames",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TableNames",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "EquipChangeOutChangedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/EquipChangeOutChangedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "EquipmentCostOperator": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/EquipmentCostOperator",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionCancelledBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/InspectionCancelledBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionClosedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/InspectionClosedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionEditAfterClose": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/InspectionEditAfterClose",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionInitiatedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/InspectionInitiatedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionInspectedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/InspectionInspectedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "InspectionSubmitTo": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/InspectionSubmitTo",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "IsNegativeStockEnabled": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/IsNegativeStockEnabled",
+      "params": [
+
+      ]
+    },
+    "IsStoreroomEnabled": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/IsStoreroomEnabled",
+      "params": [
+
+      ]
+    },
+    "ProblemLeafDispatchTo": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/ProblemLeafDispatchTo",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ProblemLeafSubmitTo": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/ProblemLeafSubmitTo",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ProjectApprovedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/ProjectApprovedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ProjectAssignedTo": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/ProjectAssignedTo",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ProjectInitiatedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/ProjectInitiatedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "RequestCancelledBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/RequestCancelledBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "RequestClosedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/RequestClosedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "RequestDispatchTo": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/RequestDispatchTo",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "RequestEditAfterClose": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/RequestEditAfterClose",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "RequestInitiatedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/RequestInitiatedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "RequestSubmitTo": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/RequestSubmitTo",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchViewCost": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/SearchViewCost",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "TableFields": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/TableFields",
+      "params": [
+        {
+          "name": "FieldNames",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Modules",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TableNames",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "TaskAssignTo": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/TaskAssignTo",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "TransferRequestedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/TransferRequestedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderCancelledBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/WorkOrderCancelledBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderClosedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/WorkOrderClosedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderCompletedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/WorkOrderCompletedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderEditAfterClose": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/WorkOrderEditAfterClose",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderInitiatedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/WorkOrderInitiatedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderRequestedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/WorkOrderRequestedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderSubmitTo": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/WorkOrderSubmitTo",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "WorkOrderSupervisors": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Relates/WorkOrderSupervisors",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

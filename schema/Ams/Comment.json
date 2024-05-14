@@ -1,0 +1,142 @@
+{
+  "Comment": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Comment/Add",
+      "params": [
+        {
+          "name": "ActivityId",
+          "type": "String",
+          "required": false,
+          "comments": "Provide ActivitySid or ActivityId"
+        },
+        {
+          "name": "ActivitySid",
+          "type": "Int64",
+          "required": false,
+          "comments": "Provide ActivitySid or ActivityId"
+        },
+        {
+          "name": "ActivityType",
+          "type": "CommentActivityType",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IsPublic",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Mark the comment as public. Does not apply to Case Correction or Case Task Comments"
+        }
+      ]
+    },
+    "ByActivityIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Comment/ByActivityIds",
+      "params": [
+        {
+          "name": "ActivityIds",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ActivityType",
+          "type": "CommentActivityType",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IsPublic",
+          "type": "Boolean",
+          "required": false,
+          "comments": "true returns only public comments, false returns non-public comments, null returns all comments. Does not apply to Case Correction or Case Task Comments"
+        }
+      ]
+    },
+    "ByActivitySids": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Comment/ByActivitySids",
+      "params": [
+        {
+          "name": "ActivitySids",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ActivityType",
+          "type": "CommentActivityType",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IsPublic",
+          "type": "Boolean",
+          "required": false,
+          "comments": "true returns only public comments, false returns non-public comments, null returns all comments. Does not apply to Case Correction or Case Task Comments"
+        }
+      ]
+    },
+    "ByActivityTypes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Comment/ByActivityTypes",
+      "params": [
+        {
+          "name": "ActivityTypes",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": "CommentActivityType enum values"
+        },
+        {
+          "name": "Categories",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Optional filter for"
+        }
+      ]
+    },
+    "ProblemComments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Comment/ProblemComments",
+      "params": [
+        {
+          "name": "ProblemSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Comment/Update",
+      "params": [
+        {
+          "name": "ActivityType",
+          "type": "CommentActivityType",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CommentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IsPublic",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Mark the comment as public. Does not apply to Case Correction or Case Task Comments"
+        }
+      ]
+    }
+  }
+}

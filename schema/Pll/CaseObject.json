@@ -1,0 +1,329 @@
+{
+  "CaseObject": {
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseObject/ByIds",
+      "params": [
+        {
+          "name": "CaObjectIds",
+          "type": "List<Int64>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateCaseFromServiceRequest": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseObject/CreateCaseFromServiceRequest",
+      "params": [
+        {
+          "name": "AcceptedBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DateAccepted",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Entities",
+          "type": "Dictionary<String, List<String>>",
+          "required": false,
+          "comments": "This maps entity types to a list of entity UIDs for the type. These entities are added to the new case."
+        },
+        {
+          "name": "Facility_Id",
+          "type": "String",
+          "required": false,
+          "comments": "Facility Identifier"
+        },
+        {
+          "name": "Level_Id",
+          "type": "String",
+          "required": false,
+          "comments": "Facility Level Identifier"
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ServiceRequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SubTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteCase": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseObject/DeleteCase",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Move": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseObject/Move",
+      "params": [
+        {
+          "name": "caObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "VcsWKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKT",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseObject/Search",
+      "params": [
+        {
+          "name": "BusCaseDesc",
+          "type": "String",
+          "required": false,
+          "comments": "Business Case Description"
+        },
+        {
+          "name": "BusinessName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseStatus",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseStatusId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateEnteredFrom",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateEnteredTo",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Facility_Id",
+          "type": "String",
+          "required": false,
+          "comments": "Facility Identifier"
+        },
+        {
+          "name": "IssuedBy",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IssuedFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Level_Id",
+          "type": "String",
+          "required": false,
+          "comments": "Facility Level Identifier"
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StatusCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubTypeDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubTypeId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UseOrLogicalOperator",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Use Or as the logical operator instead of the default And"
+        }
+      ]
+    }
+  }
+}

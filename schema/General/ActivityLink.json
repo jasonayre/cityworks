@@ -1,0 +1,172 @@
+{
+  "ActivityLink": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ActivityLink/Add",
+      "params": [
+        {
+          "name": "DestId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DestSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DestType",
+          "type": "ActivityLinkActivityType",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LinkType",
+          "type": "ActivityLinkType",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SourceId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SourceSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SourceType",
+          "type": "ActivityLinkActivityType",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByActivityIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ActivityLink/ByActivityIds",
+      "params": [
+        {
+          "name": "ActivityIds",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ActivityType",
+          "type": "ActivityLinkActivityType",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByActivitySids": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ActivityLink/ByActivitySids",
+      "params": [
+        {
+          "name": "ActivitySids",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ActivityType",
+          "type": "ActivityLinkActivityType",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CloneByActivitySid": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ActivityLink/CloneByActivitySid",
+      "params": [
+        {
+          "name": "DestinationActivitySid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DestinationActivityType",
+          "type": "ActivityLinkActivityType",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SourceActivitySid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SourceActivityType",
+          "type": "ActivityLinkActivityType",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ActivityLink/Delete",
+      "params": [
+        {
+          "name": "ActivityLinkId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Remove": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/ActivityLink/Remove",
+      "params": [
+        {
+          "name": "DestId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DestSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DestType",
+          "type": "ActivityLinkActivityType",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LinkType",
+          "type": "ActivityLinkType",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SourceId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SourceSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SourceType",
+          "type": "ActivityLinkActivityType",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

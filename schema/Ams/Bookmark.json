@@ -1,0 +1,271 @@
+{
+  "Bookmark": {
+    "AddBookmark": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Bookmark/AddBookmark",
+      "params": [
+        {
+          "name": "ExtentName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IsDefault",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SharedWithin",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMax",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMin",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMax",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMin",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddScale": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Bookmark/AddScale",
+      "params": [
+        {
+          "name": "Scale",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SharedWithin",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteBookmarks": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Bookmark/DeleteBookmarks",
+      "params": [
+        {
+          "name": "BookmarkIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteScales": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Bookmark/DeleteScales",
+      "params": [
+        {
+          "name": "ScaleIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "GetBookmarks": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Bookmark/GetBookmarks",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeShared",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKT",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "GetScales": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Bookmark/GetScales",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroupId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeShared",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SetInitialExtent": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Bookmark/SetInitialExtent",
+      "params": [
+        {
+          "name": "ExtentName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMax",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMin",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMax",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMin",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateBookmark": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Bookmark/UpdateBookmark",
+      "params": [
+        {
+          "name": "ExtentId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ExtentName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsDefault",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SharedWithin",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMax",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMin",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMax",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMin",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateScale": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Bookmark/UpdateScale",
+      "params": [
+        {
+          "name": "Scale",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ScaleId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SharedWithin",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

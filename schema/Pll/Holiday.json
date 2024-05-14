@@ -1,0 +1,38 @@
+{
+  "Holiday": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Holiday/Add",
+      "params": [
+        {
+          "name": "HalfDayFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HolidayDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HolidayDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Holiday/Delete",
+      "params": [
+        {
+          "name": "HolidayId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

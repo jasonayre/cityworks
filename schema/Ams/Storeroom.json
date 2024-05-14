@@ -1,0 +1,1379 @@
+{
+  "Storeroom": {
+    "Accounts": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/Accounts",
+      "params": [
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddAudit": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/AddAudit",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AuditReason",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "NewQuant",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "NewUnitCost",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SerialNumbersLost",
+          "type": "List<String>",
+          "required": false,
+          "comments": "If material is serialized, include serial numbers that account for lost stock."
+        },
+        {
+          "name": "StoreRm",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TagNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddIssue": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/AddIssue",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IssueToEmpSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialCostId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": true,
+          "comments": "If material is serialized, Quantity must match SerialNumbers.Count."
+        },
+        {
+          "name": "SerialNumbers",
+          "type": "List<String>",
+          "required": false,
+          "comments": "If material is serialized, include serial numbers to be issued."
+        },
+        {
+          "name": "Source",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TagNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransDateTime",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOTaskId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddReceive": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/AddReceive",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Destination",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "InvoiceNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialCostId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSerials",
+          "type": "List<MaterialSerial>",
+          "required": false,
+          "comments": "If material is seralized, include new serial numbers, warranty dates, and expiration dates. Unit cost is ignored for receives."
+        },
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PoNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": true,
+          "comments": "If material is serialized, Quantity must match MaterialSerials.Count"
+        },
+        {
+          "name": "ReceiveFromEmpSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequisitionItemId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TagNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransDateTime",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateGis",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If material is serialized and receive is not a return from WorkOrder or Employee, a new gis entity record entry will be attempted for each material serial item."
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddRequisition": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/AddRequisition",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Complete",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "ExpDeliveryDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PoNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReqType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequisitionDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddRequisitionItem": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/AddRequisitionItem",
+      "params": [
+        {
+          "name": "AccountNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Complete",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "ItemCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Justification",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "QtyInPkg",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ReceivedQuantity",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequisitionSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ReturnReason",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "UnitCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddSupplier": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/AddSupplier",
+      "params": [
+        {
+          "name": "Address",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactPerson",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactPerson2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "State",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierEmail",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierEmail2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierFax",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierNotes",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierPhone2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierPhone3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierUid",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Zipcode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddSupplierMaterial": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/AddSupplierMaterial",
+      "params": [
+        {
+          "name": "CatalogNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "InfoDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeadTime",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeadTimeUnit",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "NoInPack",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Notes",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrderQuant",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PackCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PartNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupMatName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddTransfer": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/AddTransfer",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Destination",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": true,
+          "comments": "If material is serialized, quantity must match SerialNumbers.Count."
+        },
+        {
+          "name": "RequestedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SerialNumbers",
+          "type": "List<String>",
+          "required": false,
+          "comments": "If material is serialized, include serial numbers to transfer."
+        },
+        {
+          "name": "Source",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TagNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransDateTime",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AssemblyMaterial": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/AssemblyMaterial",
+      "params": [
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Storeroom",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "BuildAssemblyMaterial": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/BuildAssemblyMaterial",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChildMaterialQuantities",
+          "type": "Dictionary<Int32, Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ChildMaterialSerialMap",
+          "type": "Dictionary<Int32, List<String>>",
+          "required": false,
+          "comments": "If any of the child materials are of cost type Serial, provide the child material serial numbers here."
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ParentMaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Storeroom",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TagNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TransDateTime",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "MaterialsByEmployeeSid": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/MaterialsByEmployeeSid",
+      "params": [
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "MaterialSearch": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/MaterialSearch",
+      "params": [
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsAssembly",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Limit",
+          "type": "Int32",
+          "required": false,
+          "comments": "Maximum number of records to return"
+        },
+        {
+          "name": "Offset",
+          "type": "Int32",
+          "required": false,
+          "comments": "Number of items to bypass before returning the remaining items."
+        },
+        {
+          "name": "Query",
+          "type": "String",
+          "required": false,
+          "comments": "Text to look for in MaterialUid, Description, PartNumber, Model, Manufacturer, Detail, BinLocation, and SecBinLocation"
+        },
+        {
+          "name": "SortDir",
+          "type": "Int32",
+          "required": false,
+          "comments": "ASC = 0, DESC = 1"
+        },
+        {
+          "name": "SortField",
+          "type": "String",
+          "required": false,
+          "comments": "Use comma delimited string for multiple sort fields."
+        },
+        {
+          "name": "Storeroom",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WhereClause",
+          "type": "List<FilterCondition>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "RequisitionItems": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/RequisitionItems",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "RequisitionSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Requisitions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/Requisitions",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "RequisitionSids",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchSuppliersByUid": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/SearchSuppliersByUid",
+      "params": [
+        {
+          "name": "SupplierUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Stock": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/Stock",
+      "params": [
+        {
+          "name": "MaterialSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Filter by these MaterialSids"
+        },
+        {
+          "name": "Storeroom",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "StoreDomainsByEmployee": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/StoreDomainsByEmployee",
+      "params": [
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Storerooms": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/Storerooms",
+      "params": [
+        {
+          "name": "CanIssue",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, will only return storerooms the current user has permissions to issue to, false value is ignored"
+        },
+        {
+          "name": "CanReceive",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, will only return storerooms the current user has permissions to receive to, false value is ignored"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "IsActive",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Filter for Active or Inactive storerooms, null will return all storerooms"
+        }
+      ]
+    },
+    "StoreroomSecurity": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/StoreroomSecurity",
+      "params": [
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": "If provided, must be greater than 0"
+        },
+        {
+          "name": "Storeroom",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "StoreroomStocks": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/StoreroomStocks",
+      "params": [
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Storeroom",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SupplierMaterial": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/SupplierMaterial",
+      "params": [
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SupplierSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Suppliers": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/Suppliers",
+      "params": [
+        {
+          "name": "MaterialSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateRequisition": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/UpdateRequisition",
+      "params": [
+        {
+          "name": "Cancel",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Complete",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "ExpDeliveryDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PoNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReceiveStoreroom",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReqType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequisitionDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequisitionItems",
+          "type": "List<RequisitionItem>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequisitionSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateStoreroomStock": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/UpdateStoreroomStock",
+      "params": [
+        {
+          "name": "BinLocation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CycleIntervalNum",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CycleIntervalUnit",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "MaxQuantity",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinQuantity",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NextAuditDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SecBinLocation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StockOnHand",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Storeroom",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateSupplier": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/UpdateSupplier",
+      "params": [
+        {
+          "name": "Address",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactPerson",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactPerson2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "IsActive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "State",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierEmail",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierEmail2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierFax",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierNotes",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierPhone2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierPhone3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Zipcode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateSupplierBulk": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/UpdateSupplierBulk",
+      "params": [
+        {
+          "name": "Suppliers",
+          "type": "List<UpdateSupplierBase>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateSupplierMaterial": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/UpdateSupplierMaterial",
+      "params": [
+        {
+          "name": "CatalogNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContractNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Storeroom Domain Id. If not set, defaults to user's StoreDomainId"
+        },
+        {
+          "name": "InfoDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeadTime",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LeadTimeUnit",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaterialSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NoInPack",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Notes",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrderQuant",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PackCost",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PartNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupMatName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupplierMaterialId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SupplierSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateSupplierMaterialBulk": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Storeroom/UpdateSupplierMaterialBulk",
+      "params": [
+        {
+          "name": "SupplierMaterials",
+          "type": "List<UpdateSupplierMaterialBase>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

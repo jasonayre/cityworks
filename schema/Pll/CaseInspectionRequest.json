@@ -1,0 +1,142 @@
+{
+  "CaseInspectionRequest": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInspectionRequest/Add",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "LocationSpecific",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestorComment",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestorName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestorPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestorPhoneExt",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestSource",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInspectionRequest/ByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByCaObjectIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInspectionRequest/ByCaObjectIds",
+      "params": [
+        {
+          "name": "CaObjectIds",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInspectionRequest/Delete",
+      "params": [
+        {
+          "name": "RequestId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DeleteByCaObjectId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInspectionRequest/DeleteByCaObjectId",
+      "params": [
+        {
+          "name": "CaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/CaseInspectionRequest/Search",
+      "params": [
+        {
+          "name": "ConfirmationId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LocationSpecific",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestorComment",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestorName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestorPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestSource",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

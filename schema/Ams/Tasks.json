@@ -1,0 +1,383 @@
+{
+  "Tasks": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/Add",
+      "params": [
+        {
+          "name": "ActualFinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualStartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssignedTo",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Entities",
+          "type": "List<WorkOrderEntity>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PermitSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProceedOk",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectedFinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectedStartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Resequence",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Rework",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SequenceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Shop",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSid",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WOTempTaskIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/ById",
+      "params": [
+        {
+          "name": "WOTaskId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByWorkOrder": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/ByWorkOrder",
+      "params": [
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderSids",
+          "type": "List<Int64>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByWorkOrderTemplate": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/ByWorkOrderTemplate",
+      "params": [
+        {
+          "name": "WOTemplateId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WOTemplateIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/Delete",
+      "params": [
+        {
+          "name": "WOTaskIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Keywords": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/Keywords",
+      "params": [
+        {
+          "name": "TaskSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Statuses": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/Statuses",
+      "params": [
+
+      ]
+    },
+    "TaskCodes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/TaskCodes",
+      "params": [
+        {
+          "name": "TaskSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TaskSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "TaskNodes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/TaskNodes",
+      "params": [
+        {
+          "name": "DisplayTextDelimeter",
+          "type": "String",
+          "required": false,
+          "comments": "Seperates Code and Description when DisplayTextMode = CD, default is '~'."
+        },
+        {
+          "name": "DisplayTextMode",
+          "type": "String",
+          "required": false,
+          "comments": "C = Code, D = Description, CD = Code ~ Description"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncludeCancelled",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Template": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/Template",
+      "params": [
+        {
+          "name": "TaskSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Templates": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/Templates",
+      "params": [
+        {
+          "name": "Keyword",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Tasks/Update",
+      "params": [
+        {
+          "name": "ActualFinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ActualStartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AssignedTo",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Effort",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PermitSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProceedOk",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectedFinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectedStartDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Resequence",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Rework",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SequenceId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Shop",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TaskCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOTaskId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

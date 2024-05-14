@@ -1,0 +1,89 @@
+{
+  "Crew": {
+    "ByEmployee": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Crew/ByEmployee",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmployeeSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Crew/ByIds",
+      "params": [
+        {
+          "name": "CrewIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Employees": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Crew/Employees",
+      "params": [
+        {
+          "name": "CrewIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Equipment": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Crew/Equipment",
+      "params": [
+        {
+          "name": "CrewIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "IdNames": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Crew/IdNames",
+      "params": [
+
+      ]
+    },
+    "Material": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Crew/Material",
+      "params": [
+        {
+          "name": "CrewIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

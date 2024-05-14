@@ -1,0 +1,423 @@
+{
+  "CustomerAccount": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerAccount/Add",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "AcctType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "AptNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CellPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustAddress",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustCity",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustDistrict",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustState",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustZip",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Fax",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FirstName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HomePhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MiddleInitial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Title",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByAccountNumbers": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerAccount/ByAccountNumbers",
+      "params": [
+        {
+          "name": "AccountNumbers",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerAccount/ByIds",
+      "params": [
+        {
+          "name": "AcctSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerAccount/Delete",
+      "params": [
+        {
+          "name": "AcctSids",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Import": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerAccount/Import",
+      "params": [
+        {
+          "name": "CustomerAccounts",
+          "type": "List<CustomerAcct>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeleteExisting",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerAccount/Search",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AcctSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AcctType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AptNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CellPhone",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustAddress",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustCity",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustDistrict",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustState",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustZip",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Fax",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FirstName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HomePhone",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MiddleInitial",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherPhone",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Title",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkPhone",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/CustomerAccount/Update",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "String",
+          "required": false,
+          "comments": "Ignored when updating more than one account"
+        },
+        {
+          "name": "AcctSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "AcctType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AptNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CellPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustAddress",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustCity",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustDistrict",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustState",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustZip",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Fax",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FirstName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HomePhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LastName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MiddleInitial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Title",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

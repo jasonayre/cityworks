@@ -1,0 +1,131 @@
+{
+  "Codes": {
+    "All": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Codes/All",
+      "params": [
+
+      ]
+    },
+    "AllCCTVCodeDescScore": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Codes/AllCCTVCodeDescScore",
+      "params": [
+
+      ]
+    },
+    "AllDescScore": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Codes/AllDescScore",
+      "params": [
+
+      ]
+    },
+    "ByCodeType": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Codes/ByCodeType",
+      "params": [
+        {
+          "name": "AddEmptyItem",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Add an empty code item, default is false"
+        },
+        {
+          "name": "CodeTypes",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EmptyItemText",
+          "type": "String",
+          "required": false,
+          "comments": "Empty Code item text, default is empty string (only applies if AddEmptyItem == true)"
+        },
+        {
+          "name": "IsActive",
+          "type": "IsActiveStatus",
+          "required": false,
+          "comments": "IsActiveStatus enum, defaults to 'All' (2)"
+        },
+        {
+          "name": "OrderByDescription",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Return list is sorted by Description, default is false which will return list sorted by Code"
+        }
+      ]
+    },
+    "Export": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Codes/Export",
+      "params": [
+        {
+          "name": "CodeTypes",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ExportCCTVCodeDescScore": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Codes/ExportCCTVCodeDescScore",
+      "params": [
+
+      ]
+    },
+    "ExportDescScore": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Codes/ExportDescScore",
+      "params": [
+
+      ]
+    },
+    "Import": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Codes/Import",
+      "params": [
+        {
+          "name": "Codes",
+          "type": "List<CodeDesc>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeleteExisting",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ImportCCTVCodeDescScore": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Codes/ImportCCTVCodeDescScore",
+      "params": [
+        {
+          "name": "CodeDescScores",
+          "type": "List<CodeDescScore>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeleteExisting",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ImportDescScore": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Codes/ImportDescScore",
+      "params": [
+        {
+          "name": "DeleteExisting",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DescScores",
+          "type": "List<DescScore>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7284 @@
+{
+  "TvInspection": {
+    "AddObservation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/AddObservation",
+      "params": [
+        {
+          "name": "CalculateRatings",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Recalculate Ratings, default is true"
+        },
+        {
+          "name": "Cause",
+          "type": "Int32",
+          "required": false,
+          "comments": "TvObservationCause enum value"
+        },
+        {
+          "name": "CctvCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ClockTo",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Continuous",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DistFromDown",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DistFromUp",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Grade",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Joint",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservDescScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservPos",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservRemarks",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TapeRead",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TvImage",
+          "type": "String",
+          "required": false,
+          "comments": "This should reference a valid file path"
+        },
+        {
+          "name": "TvTape",
+          "type": "String",
+          "required": false,
+          "comments": "This should reference a valid file path"
+        },
+        {
+          "name": "ValueDimension1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValueDimension2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValuePercent",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VCR_Time",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/ById",
+      "params": [
+        {
+          "name": "TvId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/ByIds",
+      "params": [
+        {
+          "name": "TvIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByWorkOrder": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/ByWorkOrder",
+      "params": [
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CctvObservationCodeTypes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/CctvObservationCodeTypes",
+      "params": [
+
+      ]
+    },
+    "ChangeCustomFieldCategory": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/ChangeCustomFieldCategory",
+      "params": [
+        {
+          "name": "CategoryId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TvIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CodeDescriptions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/CodeDescriptions",
+      "params": [
+        {
+          "name": "PipeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ConfirmDyeLeaks": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/ConfirmDyeLeaks",
+      "params": [
+        {
+          "name": "PipeLeakIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "TvObservationMethod enum values"
+        },
+        {
+          "name": "TvConfirmed",
+          "type": "Boolean",
+          "required": false,
+          "comments": "confirm status, defaults to true"
+        },
+        {
+          "name": "TvId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ConfirmSmokeTests": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/ConfirmSmokeTests",
+      "params": [
+        {
+          "name": "PipeLeakIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "TvObservationMethod enum values"
+        },
+        {
+          "name": "TvConfirmed",
+          "type": "Boolean",
+          "required": false,
+          "comments": "confirm status, defaults to true"
+        },
+        {
+          "name": "TvId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Create": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/Create",
+      "params": [
+        {
+          "name": "CalculateRatings",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CertificateNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Coating_Method",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRating",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "Consequence_Of_Failure",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CounterStart",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CounterStop",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Customer",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldDateValues",
+          "type": "Dictionary<Int32, DateTime>",
+          "required": false,
+          "comments": "Used to update custom field date values. Takes precedence over CustomFieldValues entry"
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleaned",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Deterioration",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Diameter",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "Down_Easting",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Elevation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Northing",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownLocation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownMh",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DrainageArea",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepth",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "DyeId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowControl",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ForemanRecomnd",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GPS_Accuracy",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCond",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedByApp",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Inspection_Status",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Inspection_Technology_Used",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsImperial",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLength",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "JointType",
+          "type": "String",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "LiningMethod",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "Location_Code",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location_Details",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MasterTapeNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Material",
+          "type": "String",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "MH_Coordinate_System",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservationSum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservMethod",
+          "type": "Int32",
+          "required": false,
+          "comments": "TvObservationMethod enum value"
+        },
+        {
+          "name": "OmRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Owner",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PipeLength",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "PipeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PoNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PreCleaning",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_Value",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Project",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RehabStatus",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RepairsMade",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_Flag",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReverseSetup",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReviewedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reviewer_Certificate_Number",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeD",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeU",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertD",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertU",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SewerCategory",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SewerUse",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Shape",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SmokeId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Spot",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Street",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SuperAprvlComnts",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SurfaceType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TapeLibraryNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLength",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "TvObservations",
+          "type": "List<TvObservation>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvReason",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Easting",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Elevation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Northing",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateGis",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepth",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "UpLocation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpMh",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Vertical_Datum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VideoLocation",
+          "type": "String",
+          "required": false,
+          "comments": "This should reference a valid file path"
+        },
+        {
+          "name": "VideoTapeNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VtrFormat",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Weather",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Width",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "YearLaid",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewed",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateFromPacp": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/CreateFromPacp",
+      "params": [
+        {
+          "name": "CalculateRatings",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CertificateNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Coating_Method",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRating",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "Consequence_Of_Failure",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CounterStart",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CounterStop",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Customer",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldDateValues",
+          "type": "Dictionary<Int32, DateTime>",
+          "required": false,
+          "comments": "Used to update custom field date values. Takes precedence over CustomFieldValues entry"
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleaned",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Deterioration",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Diameter",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "Down_Easting",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Elevation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Northing",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownLocation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownMh",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DrainageArea",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepth",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "DyeId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowControl",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ForemanRecomnd",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GPS_Accuracy",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCond",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedByApp",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Inspection_Status",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Inspection_Technology_Used",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsImperial",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLength",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "JointType",
+          "type": "String",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "LiningMethod",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "Location_Code",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location_Details",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MasterTapeNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Material",
+          "type": "String",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "MH_Coordinate_System",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservationSum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservMethod",
+          "type": "Int32",
+          "required": false,
+          "comments": "TvObservationMethod enum value"
+        },
+        {
+          "name": "OmRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Owner",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PipeLength",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "PipeType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PoNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PreCleaning",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_Value",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Project",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RehabStatus",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RepairsMade",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_Flag",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReverseSetup",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReviewedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reviewer_Certificate_Number",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeD",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeU",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertD",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertU",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SewerCategory",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SewerUse",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Shape",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SmokeId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Spot",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Street",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SuperAprvlComnts",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SurfaceType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TapeLibraryNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLength",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "TvObservations",
+          "type": "List<TvObservation>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvReason",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Easting",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Elevation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Northing",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateGis",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepth",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "UpLocation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpMh",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Vertical_Datum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VideoLocation",
+          "type": "String",
+          "required": false,
+          "comments": "This should reference a valid file path"
+        },
+        {
+          "name": "VideoTapeNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VtrFormat",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Weather",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Width",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "YearLaid",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewed",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateSearchDefinition": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/CreateSearchDefinition",
+      "params": [
+        {
+          "name": "CertificateNumber",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Coating_Method",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "CondRatingValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Consequence_Of_Failure",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CounterStart",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CounterStop",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Customer",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Deterioration",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "DeterScoreValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "DiameterValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Easting",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Elevation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Northing",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownLocation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownMh",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DrainageArea",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "DwnDepthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DyeId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DyeIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowControl",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "FlowDepthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ForemanRecomnd",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GPS_Accuracy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCond",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "GroundCondScoreValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "HydRatingValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedByApp",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Inspection_Status",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Inspection_Technology_Used",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsImperial",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "JointLengthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LiningMethod",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location_Code",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location_Details",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapNumber",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MasterTapeNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Material",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MH_Coordinate_System",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num1Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num2Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num3Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num4Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num5Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservationSum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservMethod",
+          "type": "Int32",
+          "required": false,
+          "comments": "TvObservationMethod enum values"
+        },
+        {
+          "name": "OmRatingIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OmRatingIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OmRatingIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OmRatingMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OmRatingMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OmRatingRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "OmRatingValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Owner",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "PipeLengthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PoNumber",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "PrecipTypeScoreValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PreCleaning",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Pressure_ValueValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Project",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RehabStatus",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RepairsMade",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Reverse_Setup_FlagValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReverseSetup",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReviewedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReviewedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reviewer_Certificate_Number",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "RimToGradeDValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeUIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeUIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeUIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeUMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeUMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeURangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "RimToGradeUValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "RimToInvertDValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertUIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertUIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertUIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertUMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertUMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertURangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "RimToInvertUValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "RootRatingValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SaveDefinition",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Save the definition at the time it is created, SearchName must be populated."
+        },
+        {
+          "name": "SearchName",
+          "type": "String",
+          "required": false,
+          "comments": "Search name, required if SaveDefinition is true"
+        },
+        {
+          "name": "SewerCategory",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SewerUse",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Shape",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SharedWithin",
+          "type": "Int32",
+          "required": false,
+          "comments": "Make the search available to the user's group or domain"
+        },
+        {
+          "name": "SmokeId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SmokeIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Spot",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "SpotScoreValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Street",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "StructRatingValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SuperAprvlComnts",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SurfaceType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TapeLibraryNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "TotalLengthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvReason",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Easting",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Elevation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Northing",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "UpDepthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpLocation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpMh",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Vertical_Datum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VideoLocation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VideoTapeNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VtrFormat",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Weather",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "WidthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "XValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "YearLaidValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "YearRenewedValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "YValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DescriptionScores": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/DescriptionScores",
+      "params": [
+
+      ]
+    },
+    "DownstreamNode": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/DownstreamNode",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "EntityTypes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/EntityTypes",
+      "params": [
+
+      ]
+    },
+    "InspectedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/InspectedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "get list using domain id if TvId is not provided, defaults to current user domain id"
+        },
+        {
+          "name": "TvId",
+          "type": "Int32",
+          "required": false,
+          "comments": "get list using the domainId from the specified inspection, ensures the current TV inspected by value is in the list"
+        }
+      ]
+    },
+    "Move": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/Move",
+      "params": [
+        {
+          "name": "TvId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "VcsWKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKID",
+          "type": "Int32",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT)"
+        },
+        {
+          "name": "WKT",
+          "type": "String",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT)"
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Observation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/Observation",
+      "params": [
+        {
+          "name": "ObservationId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ObservationCauseCodeDescriptions": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/ObservationCauseCodeDescriptions",
+      "params": [
+        {
+          "name": "ObservationMethod",
+          "type": "Int32",
+          "required": false,
+          "comments": "TvObservationMethod enum values"
+        }
+      ]
+    },
+    "ObservationCodeTypes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/ObservationCodeTypes",
+      "params": [
+
+      ]
+    },
+    "Observations": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/Observations",
+      "params": [
+        {
+          "name": "TvIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ReviewedBy": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/ReviewedBy",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "get list using domain id if TvId is not provided, defaults to current user domain id"
+        },
+        {
+          "name": "TvId",
+          "type": "Int32",
+          "required": false,
+          "comments": "get list using the domainId from the specified inspection, ensures the current TV inspected by value is in the list"
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/Search",
+      "params": [
+        {
+          "name": "CertificateNumber",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Coating_Method",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRatingRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "CondRatingValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Consequence_Of_Failure",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CounterStart",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CounterStop",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Customer",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleanedRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Deterioration",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScoreRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "DeterScoreValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DiameterRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "DiameterValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Easting",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Elevation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Northing",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownLocation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownMh",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DrainageArea",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "DwnDepthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DyeId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DyeIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowControl",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "FlowDepthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ForemanRecomnd",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GPS_Accuracy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCond",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScoreRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "GroundCondScoreValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRatingRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "HydRatingValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedByApp",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Inspection_Status",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Inspection_Technology_Used",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsImperial",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLengthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "JointLengthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LiningMethod",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location_Code",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location_Details",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapNumber",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MasterTapeNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Material",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MH_Coordinate_System",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num1Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num2Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num3Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num4Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num5Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservationSum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservMethod",
+          "type": "Int32",
+          "required": false,
+          "comments": "TvObservationMethod enum values"
+        },
+        {
+          "name": "OmRatingIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OmRatingIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OmRatingIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OmRatingMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OmRatingMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OmRatingRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "OmRatingValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Owner",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLengthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "PipeLengthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PoNumber",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScoreRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "PrecipTypeScoreValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PreCleaning",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_ValueRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Pressure_ValueValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Project",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RehabStatus",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RepairsMade",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_FlagRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Reverse_Setup_FlagValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReverseSetup",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReviewedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReviewedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reviewer_Certificate_Number",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeDRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "RimToGradeDValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeUIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeUIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeUIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeUMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeUMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeURangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "RimToGradeUValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertDRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "RimToInvertDValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertUIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertUIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertUIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertUMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertUMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertURangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "RimToInvertUValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRatingRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "RootRatingValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SewerCategory",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SewerUse",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Shape",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SmokeId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SmokeIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Spot",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScoreRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "SpotScoreValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Street",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRatingRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "StructRatingValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SuperAprvlComnts",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SurfaceType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TapeLibraryNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLengthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "TotalLengthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvReason",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Easting",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Elevation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Northing",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "UpDepthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpLocation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpMh",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpType",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Vertical_Datum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VideoLocation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VideoTapeNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VtrFormat",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Weather",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WidthRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "WidthValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "XValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaidRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "YearLaidValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewedRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "YearRenewedValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "YValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UnitsOfMeasure": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/UnitsOfMeasure",
+      "params": [
+
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/Update",
+      "params": [
+        {
+          "name": "CertificateNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "City",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Coating_Method",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CondRating",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "Consequence_Of_Failure",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CounterStart",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CounterStop",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Customer",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldDateValues",
+          "type": "Dictionary<Int32, DateTime>",
+          "required": false,
+          "comments": "Used to update custom field date values. Takes precedence over CustomFieldValues entry"
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCleaned",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Deterioration",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DeterScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Diameter",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "Down_Easting",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Elevation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Down_Northing",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownLocation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownMh",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DownType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DrainageArea",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DwnDepth",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "DyeId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowControl",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FlowDepth",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ForemanRecomnd",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GPS_Accuracy",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCond",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GroundCondScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HydRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedByApp",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Inspection_Status",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Inspection_Technology_Used",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsImperial",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "JointLength",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "JointType",
+          "type": "String",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "LiningMethod",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "Location_Code",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Location_Details",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MasterTapeNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Material",
+          "type": "String",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "MH_Coordinate_System",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservationSum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservMethod",
+          "type": "Int32",
+          "required": false,
+          "comments": "TvObservationMethod enum value"
+        },
+        {
+          "name": "OmRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Owner",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PipeLength",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "PipeType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PoNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrecipTypeScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PreCleaning",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Pressure_Value",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Project",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RehabStatus",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RepairsMade",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reverse_Setup_Flag",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReverseSetup",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReviewedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Reviewer_Certificate_Number",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeD",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToGradeU",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertD",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RimToInvertU",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RootRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SewerCategory",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SewerUse",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Shape",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SmokeId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Spot",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SpotScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Street",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StructRating",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SuperAprvlComnts",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SurfaceType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TapeLibraryNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalLength",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "TvId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TvReason",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Easting",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Elevation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Up_Northing",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateGis",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateMap",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpDepth",
+          "type": "Double",
+          "required": false,
+          "comments": "Maps to gis field"
+        },
+        {
+          "name": "UpLocation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpMh",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Vertical_Datum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VideoLocation",
+          "type": "String",
+          "required": false,
+          "comments": "This should reference a valid file path"
+        },
+        {
+          "name": "VideoTapeNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VtrFormat",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Weather",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Width",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearLaid",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YearRenewed",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateObservation": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/UpdateObservation",
+      "params": [
+        {
+          "name": "CalculateRatings",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Recalculate Ratings, default is true"
+        },
+        {
+          "name": "Cause",
+          "type": "Int32",
+          "required": false,
+          "comments": "TvObservationCause enum value"
+        },
+        {
+          "name": "CctvCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ClockTo",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Continuous",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DistFromDown",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DistFromUp",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Grade",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Joint",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservationId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ObservDesc",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservDescScore",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservPos",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservRemarks",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ObservType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TapeRead",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TvImage",
+          "type": "String",
+          "required": false,
+          "comments": "This should reference a valid file path"
+        },
+        {
+          "name": "TvTape",
+          "type": "String",
+          "required": false,
+          "comments": "This should reference a valid file path"
+        },
+        {
+          "name": "ValueDimension1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValueDimension2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ValuePercent",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VCR_Time",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpstreamNode": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/TvInspection/UpstreamNode",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUid",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

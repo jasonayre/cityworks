@@ -1,0 +1,56 @@
+{
+  "Condition": {
+    "Current": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Condition/Current",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "History": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/Condition/History",
+      "params": [
+        {
+          "name": "EntityType",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "EntityUids",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncludeConditionScore",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeCustomScore",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeMaintenanceScore",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

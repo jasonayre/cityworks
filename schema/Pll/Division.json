@@ -1,0 +1,117 @@
+{
+  "Division": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Division/Add",
+      "params": [
+        {
+          "name": "AdditionalComments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressLine1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressLine2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressLine3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ContactName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DepartmentCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DepartmentId",
+          "type": "Int64",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DivisionCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "DivisionName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FaxNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneNumberExt",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

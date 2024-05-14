@@ -1,0 +1,4989 @@
+{
+  "ServiceRequest": {
+    "AddComments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/AddComments",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "AllStreetCode": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/AllStreetCode",
+      "params": [
+
+      ]
+    },
+    "AuditLog": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/AuditLog",
+      "params": [
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/ById",
+      "params": [
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/ByIds",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIncidentAndEmail": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/ByIncidentAndEmail",
+      "params": [
+        {
+          "name": "EmailAddress",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncidentNumber",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByOtherSystemId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/ByOtherSystemId",
+      "params": [
+        {
+          "name": "OtherSystemId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Cancel": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Cancel",
+      "params": [
+        {
+          "name": "CancelReason",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelled",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ChangeCustomFieldCategory": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/ChangeCustomFieldCategory",
+      "params": [
+        {
+          "name": "CategoryId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ChangeProblem": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/ChangeProblem",
+      "params": [
+        {
+          "name": "ProblemSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Close": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Close",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Combine": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Combine",
+      "params": [
+        {
+          "name": "CancelCombinedRequests",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "FromRequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ToRequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Comments": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Comments",
+      "params": [
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CommentsByRequestIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/CommentsByRequestIds",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Create": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Create",
+      "params": [
+        {
+          "name": "Address",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Answers",
+          "type": "List<ServiceRequestAnswer>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AptNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerAcctNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerAddress",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerAddressType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerAptNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerCallback",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerCallbackTime",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerCallTime",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerCellPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerCity",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerComments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerContact",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerContactTime",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerDistrict",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerEmail",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerFax",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerFirstName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerHomePhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerIsFollowUpCall",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerIsOwner",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerLastName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerMiddleInitial",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerOtherPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerState",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerText1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerText2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerText3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerText4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerText5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerTitle",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerWorkPhone",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CallerZip",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Link request to cases"
+        },
+        {
+          "name": "City",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomFieldDateValues",
+          "type": "Dictionary<Int32, DateTime>",
+          "required": false,
+          "comments": "Used to update custom field date values. Takes precedence over CustomFieldValues entry"
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": "Custom field values where key is the custom field id."
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateAnswers",
+          "type": "List<ServiceRequestDateAnswer>",
+          "required": false,
+          "comments": "Used to update question answer date values. Takes precedence over Answers entry"
+        },
+        {
+          "name": "DateInvtDone",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInit",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Details",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchToSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "District",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Emergency",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Facility_Id",
+          "type": "String",
+          "required": false,
+          "comments": "Facility Identifier"
+        },
+        {
+          "name": "FieldInvtDone",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "GeocodeAddress",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Use the first result from the geocode service with the HIGHEST SCORE to update Address, City, State, Zip, MapPage, TileNo, Shop, District and XY values. Ignored if a valid XY is provided."
+        },
+        {
+          "name": "InitiatedByApp",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Link request to inspections"
+        },
+        {
+          "name": "Landmark",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Level_Id",
+          "type": "String",
+          "required": false,
+          "comments": "Facility Level Identifier"
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapPage",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Priority",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProblemSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "ProjectSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReqCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Custom field category. Required if custom field values input is for a category that differs from custom field category defined on the template."
+        },
+        {
+          "name": "Shop",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "State",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TileNo",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "VcsWKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKID",
+          "type": "Int32",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT) if XY needs to be projected"
+        },
+        {
+          "name": "WKT",
+          "type": "String",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT) if XY needs to be projected"
+        },
+        {
+          "name": "WONeeded",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Link request to work orders"
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Zip",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateSearchDefinition": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/CreateSearchDefinition",
+      "params": [
+        {
+          "name": "CallerEmail",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Canceled",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CancelledBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CancelledBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CancelledBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "CancelReason",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Closed",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ClosedBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ClosedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ClosedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "Date1Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Details",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchOpenBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchOpenBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchOpenBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "DispatchToSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchToSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "DomainId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "EffortIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EffortIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EffortIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EffortMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EffortMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EffortRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "EffortValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EnableEurl",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Enable eURL when saving the search definition"
+        },
+        {
+          "name": "Excursion",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Extent",
+          "type": "GISExtent",
+          "required": false,
+          "comments": "XY values must be in the same spatial reference as defined by the Designer CwWKID value"
+        },
+        {
+          "name": "Facility_Id",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Facility Identifier"
+        },
+        {
+          "name": "FieldInvtDone",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HasAttachment",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HasCase",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HasInspection",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HasWorkOrder",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedByApp",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "LaborCostIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "LaborCostValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Level_Id",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Facility Level Identifier"
+        },
+        {
+          "name": "MapPage",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num1Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num2Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num3Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num4Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num5Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemCode",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemDesc",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemDesc2",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemStatus",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PastDue",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Priority",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbAddress",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbAddType",
+          "type": "String",
+          "required": false,
+          "comments": "Value is A or B"
+        },
+        {
+          "name": "ProbAptNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbCity",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbDistrict",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbLandmark",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProblemCode",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProblemSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProblemSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ProbLocation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbState",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbZip",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ReqCategory",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReqCustFieldCatId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReqCustFieldCatIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "RequestId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "Resolution",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SaveDefinition",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Save the definition at the time it is created, SearchName must be populated."
+        },
+        {
+          "name": "SearchName",
+          "type": "String",
+          "required": false,
+          "comments": "Search name, required if SaveDefinition is true"
+        },
+        {
+          "name": "SharedWithin",
+          "type": "Int32",
+          "required": false,
+          "comments": "Make the search available to the user's group or domain"
+        },
+        {
+          "name": "Shop",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToEmail",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToOpenBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToOpenBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToOpenBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "SubmitToPager",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToPhone",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "Text1",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text11",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text12",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text13",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text14",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text15",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text16",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text17",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text18",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text19",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text20",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TileNo",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WoNeeded",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "XValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "YValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "ZValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CustomFieldCategories": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/CustomFieldCategories",
+      "params": [
+        {
+          "name": "CategoryIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeInactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CustomFields": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/CustomFields",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DefaultStatus": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/DefaultStatus",
+      "params": [
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Delete": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Delete",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "DispatchTo": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/DispatchTo",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Move": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Move",
+      "params": [
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "VcsWKID",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WKID",
+          "type": "Int32",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT)"
+        },
+        {
+          "name": "WKT",
+          "type": "String",
+          "required": false,
+          "comments": "Must provide well known id (WKID) or well known text (WKT)"
+        },
+        {
+          "name": "X",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Y",
+          "type": "Double",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Z",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Priorities": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Priorities",
+      "params": [
+        {
+          "name": "ProblemSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ProblemLeafByOtherSysCodeDescs": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/ProblemLeafByOtherSysCodeDescs",
+      "params": [
+        {
+          "name": "OtherSysCode",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "OtherSysDesc1",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "OtherSysDesc2",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ProblemLeafBySid": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/ProblemLeafBySid",
+      "params": [
+        {
+          "name": "ProblemSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ProblemNodes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/ProblemNodes",
+      "params": [
+        {
+          "name": "DisplayTextDelimeter",
+          "type": "String",
+          "required": false,
+          "comments": "Seperates Code and Description when DisplayTextMode = CD, default is '~'."
+        },
+        {
+          "name": "DisplayTextMode",
+          "type": "String",
+          "required": false,
+          "comments": "C = Code, D = Description, CD = Code ~ Description"
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IncludeCancelled",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ViewOnly",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Problems": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Problems",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ForPublicOnly",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OnlyActiveTemplates",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ProblemsByKeywords": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/ProblemsByKeywords",
+      "params": [
+        {
+          "name": "Keywords",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "QA": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/QA",
+      "params": [
+        {
+          "name": "ProblemSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Reopen": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Reopen",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "RequestInspections": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/RequestInspections",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "RequestWorkOrders": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/RequestWorkOrders",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Search",
+      "params": [
+        {
+          "name": "CallerEmail",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Canceled",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CancelledBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CancelledBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CancelledBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "CancelReason",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Closed",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ClosedBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ClosedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ClosedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "Date1Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5Begin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5End",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5IsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5NotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5RangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateCancelledRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchOpenRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateDispatchToRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDoneRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToOpenRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateSubmitToRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeClosedRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTimeInitRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Details",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchOpenBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchOpenBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchOpenBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "DispatchToSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchToSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "DomainId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "EffortIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EffortIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EffortIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EffortMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EffortMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EffortRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "EffortValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Excursion",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Extent",
+          "type": "GISExtent",
+          "required": false,
+          "comments": "XY values must be in the same spatial reference as defined by the Designer CwWKID value"
+        },
+        {
+          "name": "Facility_Id",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Facility Identifier"
+        },
+        {
+          "name": "FieldInvtDone",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HasAttachment",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HasCase",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HasInspection",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "HasWorkOrder",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedByApp",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "LaborCostIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LaborCostRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "LaborCostValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Level_Id",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Facility Level Identifier"
+        },
+        {
+          "name": "MapPage",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num1Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num2Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num3Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num4Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5IsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5MinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5RangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "Num5Values",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemCode",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemDesc",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemDesc2",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemStatus",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PastDue",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Priority",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PrjCompleteDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbAddress",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbAddType",
+          "type": "String",
+          "required": false,
+          "comments": "Value is A or B"
+        },
+        {
+          "name": "ProbAptNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbCity",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbDistrict",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbLandmark",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProblemCode",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProblemSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProblemSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ProbLocation",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbState",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbZip",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "ReqCategory",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReqCustFieldCatId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReqCustFieldCatIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "RequestId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestIdIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "Resolution",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Shop",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StreetName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToEmail",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToOpenBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToOpenBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToOpenBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "SubmitToPager",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToPhone",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Default is true"
+        },
+        {
+          "name": "Text1",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text11",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text12",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text13",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text14",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text15",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text16",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text17",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text18",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text19",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text20",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TileNo",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WoNeeded",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "XRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "XValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "YRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "YValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "ZValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "SearchObject": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/SearchObject",
+      "params": [
+        {
+          "name": "RequestId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Statuses": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Statuses",
+      "params": [
+
+      ]
+    },
+    "SubmitTo": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/SubmitTo",
+      "params": [
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "TemplateCustomFields": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/TemplateCustomFields",
+      "params": [
+        {
+          "name": "ProblemSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Uncancel": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Uncancel",
+      "params": [
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "String",
+          "required": false,
+          "comments": "Service Request Status, defaults to domain SR status"
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/ServiceRequest/Update",
+      "params": [
+        {
+          "name": "Address",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CaseIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Link request to cases"
+        },
+        {
+          "name": "Category",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": "Add new comments to the request"
+        },
+        {
+          "name": "CustomFieldDateValues",
+          "type": "Dictionary<Int32, DateTime>",
+          "required": false,
+          "comments": "Used to update custom field date values. Takes precedence over CustomFieldValues entry"
+        },
+        {
+          "name": "CustomFieldValues",
+          "type": "Dictionary<Int32, String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date1",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date2",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date3",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date4",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Date5",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateInvtDone",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Details",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchOpenBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": "Sets DateDispatchOpen and DispatchOpenBy if DispatchOpenBySid is updated"
+        },
+        {
+          "name": "DispatchToDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DispatchToSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "District",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Effort",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Emergency",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Facility_Id",
+          "type": "String",
+          "required": false,
+          "comments": "Facility Identifier"
+        },
+        {
+          "name": "FieldInvtDone",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedByApp",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InitiatedDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": "Must have 'ModifyDateTimeInit' preference enabled for request's domain"
+        },
+        {
+          "name": "InspectionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "Link request to inspections"
+        },
+        {
+          "name": "Level_Id",
+          "type": "String",
+          "required": false,
+          "comments": "Facility Level Identifier"
+        },
+        {
+          "name": "MapPage",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num1",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num2",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num3",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num4",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Num5",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OtherSystemId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Priority",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbAptNum",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbCity",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbLandmark",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbLocation",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbState",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProbZip",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectedFinishDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ProjectSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReqCustFieldCatId",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Resolution",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Shop",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Status",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SubmitToOpenBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": "Sets DateSubmitToOpen and SubmitToOpenBy if SubmitToOpenBySid is updated"
+        },
+        {
+          "name": "SubmitToSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text10",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text11",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text12",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text13",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text14",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text15",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text16",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text17",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text18",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text19",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text20",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text4",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text5",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text6",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text7",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text8",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Text9",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TileNo",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WONeeded",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Link request to work orders"
+        }
+      ]
+    }
+  }
+}

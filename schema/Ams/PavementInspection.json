@@ -1,0 +1,730 @@
+{
+  "PavementInspection": {
+    "AddDistress": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/AddDistress",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Distress",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "QuantityUnit",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SampleId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Severity",
+          "type": "DistressSeverity",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "AddSample": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/AddSample",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SampleNr",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SampleSize",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SampleSizeUnit",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SampleType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ById": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/ById",
+      "params": [
+        {
+          "name": "InspectionSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/ByIds",
+      "params": [
+        {
+          "name": "Ids",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "InspectionSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PopulateBranchInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PopulateSectionInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CodeDesc": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/CodeDesc",
+      "params": [
+
+      ]
+    },
+    "Create": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/Create",
+      "params": [
+        {
+          "name": "InspectionDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SectionClassName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SectionUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CreateSearchDefinition": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/CreateSearchDefinition",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedSurface",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsDirty",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SaveDefinition",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Save the definition at the time it is created, SearchName must be populated."
+        },
+        {
+          "name": "SearchName",
+          "type": "String",
+          "required": false,
+          "comments": "Search name, required if SaveDefinition is true"
+        },
+        {
+          "name": "SectionClassName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SectionUid",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SharedWithin",
+          "type": "Int32",
+          "required": false,
+          "comments": "Make the search available to the user's group or domain"
+        },
+        {
+          "name": "TotalSamplesIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "TotalSamplesValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "DistressCodes": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/DistressCodes",
+      "params": [
+
+      ]
+    },
+    "Distresses": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/Distresses",
+      "params": [
+        {
+          "name": "SampleId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SampleIds",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Samples": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/Samples",
+      "params": [
+        {
+          "name": "InspectionSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "InspectionSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/Search",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedSurface",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsDirty",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SectionClassName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SectionUid",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "TotalSamplesValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/Update",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedSurface",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionSid",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "IsDirty",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SectionClassName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SectionUid",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamples",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateDistress": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/UpdateDistress",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Distress",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DistressId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "QuantityUnit",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Severity",
+          "type": "DistressSeverity",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "UpdateSample": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/PavementInspection/UpdateSample",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SampleId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SampleNr",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SampleSize",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SampleSizeUnit",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SampleType",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

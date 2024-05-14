@@ -1,0 +1,564 @@
+{
+  "WorkOrderTemplate": {
+    "ByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/WorkOrderTemplate/ByIds",
+      "params": [
+        {
+          "name": "IncludeComments",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include template comments, default is true"
+        },
+        {
+          "name": "IncludeInstructions",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include template instructions, default is true"
+        },
+        {
+          "name": "MaximumDateModified",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumDateModified",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOTemplateIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ByProblemSids": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/WorkOrderTemplate/ByProblemSids",
+      "params": [
+        {
+          "name": "OnlyActiveTemplates",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Only include active work order templates, default returns all templates"
+        },
+        {
+          "name": "ProblemSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByServiceRequestId": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/WorkOrderTemplate/ByServiceRequestId",
+      "params": [
+        {
+          "name": "OnlyActiveTemplates",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Only include active work order templates, default returns all templates"
+        },
+        {
+          "name": "RequestId",
+          "type": "Int32",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByServiceRequestIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/WorkOrderTemplate/ByServiceRequestIds",
+      "params": [
+        {
+          "name": "OnlyActiveTemplates",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Only include active work order templates, default returns all templates"
+        },
+        {
+          "name": "RequestIds",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "ByTemplateClassIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/WorkOrderTemplate/ByTemplateClassIds",
+      "params": [
+        {
+          "name": "TemplateClassIds",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "CustomFieldCategories": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/WorkOrderTemplate/CustomFieldCategories",
+      "params": [
+        {
+          "name": "IsActive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "CustomFields": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/WorkOrderTemplate/CustomFields",
+      "params": [
+        {
+          "name": "WOTemplateIds",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        }
+      ]
+    },
+    "Search": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/WorkOrderTemplate/Search",
+      "params": [
+        {
+          "name": "AcctNum",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ApplyToEntity",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AutoCreateTask",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Cancel",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CopyCustomFieldVal",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "CustomFieldValueSource enum values"
+        },
+        {
+          "name": "CycleFrom",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "RepeatFromDate enum values"
+        },
+        {
+          "name": "CycleIncludeWeekends",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CycleIntervalNum",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CycleIntervalUnit",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "RepeatIntervalUnit enum values"
+        },
+        {
+          "name": "CycleType",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "RepeatType enum values"
+        },
+        {
+          "name": "DaysToComplete",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultCrewId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultProject",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DefaultProjectSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Description",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpenseType",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "WOExpenseType enum values"
+        },
+        {
+          "name": "IncludeComments",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include template comments, default is false"
+        },
+        {
+          "name": "IncludeInstructions",
+          "type": "Boolean",
+          "required": false,
+          "comments": "Include template instructions, default is false"
+        },
+        {
+          "name": "IsReactive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaintScore",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MapTemplateName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumCreateDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumCycleIntervalNum",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumDateModified",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumDefaultProjectSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumEffort",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumMaintScore",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumNumDaysBefore",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumWarrantyDuration",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumWOMapScale",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaximumWoTemplateId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MiminumNumDaysBefore",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumCreateDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumCycleIntervalNum",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumDateModified",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumDefaultProjectSid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumEffort",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumMaintScore",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumWarrantyDuration",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumWOMapScale",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumWoTemplateId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "NumDaysBefore",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Printer",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Priority",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RequireAssetOnClose",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Shop",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Stage",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "WOStage enum values"
+        },
+        {
+          "name": "SubmitToEmployeeSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SupervisorEmployeeSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitsAccompDesc",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UnitsAccompDescLock",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UpdateXY",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WarrantyDuration",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WarrantyDurationUnit",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "RepeatIntervalUnit enum values"
+        },
+        {
+          "name": "WOCategory",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOCustFieldCatId",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOMapScale",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOOutput",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WOPrintTmpt",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkMonth",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WoTemplateIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "TemplateInspections": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/WorkOrderTemplate/TemplateInspections",
+      "params": [
+        {
+          "name": "WoTemplateIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "TemplateNames": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Ams/WorkOrderTemplate/TemplateNames",
+      "params": [
+        {
+          "name": "AllDomainTemplates",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, return all templates in the domain. Default is false."
+        },
+        {
+          "name": "Category",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DomainId",
+          "type": "Int32",
+          "required": false,
+          "comments": "Use to return templates in a specific domain. Defaults to user's current domain."
+        },
+        {
+          "name": "EntityTypes",
+          "type": "List<String>",
+          "required": true,
+          "comments": "Not required if AllDomainTemplates is true"
+        },
+        {
+          "name": "MaximumDateModified",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MinimumDateModified",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OnlyCanCreate",
+          "type": "Boolean",
+          "required": false,
+          "comments": "If true, only return templates the user can create. Default is true"
+        },
+        {
+          "name": "WOTemplateIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": "Select by template id, ignores entity type parameters"
+        }
+      ]
+    }
+  }
+}

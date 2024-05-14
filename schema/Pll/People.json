@@ -1,0 +1,141 @@
+{
+  "People": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/People/Add",
+      "params": [
+        {
+          "name": "AddressLine1",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressLine2",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "AddressLine3",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CityName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CompanyName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CountryCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Email",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ExpiredFlag",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "FaxNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "Name",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PhoneHome",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneMobile",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneNumber",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneWork",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PhoneWorkExt",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "RoleIds",
+          "type": "List<Int64>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "StateCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TableName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UserId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WebSiteUrl",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ZipCode",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

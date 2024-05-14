@@ -1,0 +1,163 @@
+{
+  "EscrowPaymentReceipt": {
+    "Add": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/EscrowPaymentReceipt/Add",
+      "params": [
+        {
+          "name": "AmountBalance",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LoginId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReceiptDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReceiptFileName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalAmountDue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalAmountTendered",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UserId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "GetList": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/EscrowPaymentReceipt/GetList",
+      "params": [
+        {
+          "name": "Limit",
+          "type": "Int32",
+          "required": false,
+          "comments": "Maximum number of records to return"
+        },
+        {
+          "name": "Offset",
+          "type": "Int32",
+          "required": false,
+          "comments": "Number of items to bypass before returning the remaining items."
+        },
+        {
+          "name": "SortDir",
+          "type": "Int32",
+          "required": false,
+          "comments": "ASC = 0, DESC = 1"
+        },
+        {
+          "name": "SortField",
+          "type": "String",
+          "required": false,
+          "comments": "Use comma delimited string for multiple sort fields."
+        },
+        {
+          "name": "WhereClause",
+          "type": "List<FilterCondition>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "Update": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/EscrowPaymentReceipt/Update",
+      "params": [
+        {
+          "name": "AmountBalance",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CommentText",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "EscrowPaymentReceiptId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "LoginId",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "OrgId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReceiptDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "ReceiptFileName",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalAmountDue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalAmountTendered",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "UserId",
+          "type": "Int64",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}

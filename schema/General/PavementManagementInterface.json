@@ -1,0 +1,680 @@
+{
+  "PavementManagementInterface": {
+    "ExportInspections": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/ExportInspections",
+      "params": [
+        {
+          "name": "BranchUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomInspectionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use inspection entity information"
+        },
+        {
+          "name": "DateFrom",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTo",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SearchHasBranchInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": "GIS Search contains branch info, default is true"
+        },
+        {
+          "name": "SearchHasSectionInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": "GIS Search contains section info, default is false"
+        },
+        {
+          "name": "SearchIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use GIS, Inspection, InspCommon, WorkOrder, or WorkOrderEntity search results"
+        },
+        {
+          "name": "SectionIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderEntityObjectIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use workorder entity information"
+        },
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": "use workorder entity information"
+        }
+      ]
+    },
+    "ExportInventory": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/ExportInventory",
+      "params": [
+        {
+          "name": "BranchIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BranchUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomInspectionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use inspection entity information"
+        },
+        {
+          "name": "SearchHasBranchInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": "GIS Search contains branch info, default is true"
+        },
+        {
+          "name": "SearchHasSectionInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": "GIS Search contains section info, default is false"
+        },
+        {
+          "name": "SearchIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use GIS, Inspection, InspCommon, WorkOrder, or WorkOrderEntity search results"
+        },
+        {
+          "name": "SectionIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderEntityObjectIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use workorder entity information"
+        },
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": "use workorder entity information"
+        }
+      ]
+    },
+    "ExportWorkHistory": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/ExportWorkHistory",
+      "params": [
+        {
+          "name": "BranchUids",
+          "type": "List<String>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "CustomInspectionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use inspection entity information"
+        },
+        {
+          "name": "DateFrom",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTo",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SearchHasBranchInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": "GIS Search contains branch info, default is true"
+        },
+        {
+          "name": "SearchHasSectionInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": "GIS Search contains section info, default is false"
+        },
+        {
+          "name": "SearchIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use GIS, Inspection, InspCommon, WorkOrder, or WorkOrderEntity search results"
+        },
+        {
+          "name": "SectionIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderEntityObjectIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use workorder entity information"
+        },
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": "use workorder entity information"
+        }
+      ]
+    },
+    "GeneratePaverData": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/GeneratePaverData",
+      "params": [
+        {
+          "name": "BranchIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "BranchUids",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "CustomInspectionIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use inspection entity information"
+        },
+        {
+          "name": "DateFrom",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "DateTo",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "f",
+          "type": "String",
+          "required": false,
+          "comments": "output format: 'json' or 'zip', default is 'zip'"
+        },
+        {
+          "name": "IncludeInspections",
+          "type": "Boolean",
+          "required": false,
+          "comments": "include Cityworks pavement inspections, default is true"
+        },
+        {
+          "name": "IncludeInventory",
+          "type": "Boolean",
+          "required": false,
+          "comments": "include gis data, default is true"
+        },
+        {
+          "name": "IncludeWorkHistory",
+          "type": "Boolean",
+          "required": false,
+          "comments": "include Cityworks work history, default is true"
+        },
+        {
+          "name": "SearchHasBranchInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": "GIS Search contains branch info, default is true"
+        },
+        {
+          "name": "SearchHasSectionInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": "GIS Search contains section info, default is false"
+        },
+        {
+          "name": "SearchIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use GIS, Inspection, InspCommon, WorkOrder, or WorkOrderEntity search results"
+        },
+        {
+          "name": "SectionIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderEntityObjectIds",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": "use workorder entity information"
+        },
+        {
+          "name": "WorkOrderIds",
+          "type": "List<String>",
+          "required": false,
+          "comments": "use workorder entity information"
+        }
+      ]
+    },
+    "GetPavementInspectionsByIds": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/GetPavementInspectionsByIds",
+      "params": [
+        {
+          "name": "InspectionSids",
+          "type": "List<Int32>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "PopulateBranchInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": "query gis for branch data, default is false"
+        },
+        {
+          "name": "PopulateSectionInfo",
+          "type": "Boolean",
+          "required": false,
+          "comments": "query gis for section data, default is false"
+        }
+      ]
+    },
+    "GISQueries": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/GISQueries",
+      "params": [
+
+      ]
+    },
+    "GISSavedSearches": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/GISSavedSearches",
+      "params": [
+
+      ]
+    },
+    "ImportInspection": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/ImportInspection",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBy",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedSurface",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDate",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsDirty",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "PavementSamples",
+          "type": "List<PavementSample>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SectionClassName",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "SectionUid",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamples",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WOTemplateId",
+          "type": "String",
+          "required": false,
+          "comments": "Work Order Template Id"
+        }
+      ]
+    },
+    "ImportInspections": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/ImportInspections",
+      "params": [
+        {
+          "name": "InspectionData",
+          "type": "List<ImportInspectionData>",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "WOTemplateId",
+          "type": "String",
+          "required": true,
+          "comments": "Work Order Template Id used to create a workorder for each distinct inspection date."
+        }
+      ]
+    },
+    "PavementInspectionSearch": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/PavementInspectionSearch",
+      "params": [
+        {
+          "name": "Comments",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBy",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedBySidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectedSurface",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateBegin",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateEnd",
+          "type": "DateTime",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateIsNull",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateNotInRange",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeIncludeCurrent",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeLast",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeNext",
+          "type": "Double",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionDateRangeUnits",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionSid",
+          "type": "List<Int32>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "InspectionSidIsInList",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IsDirty",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "MaxResults",
+          "type": "Int32",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SectionClassName",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "SectionUid",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesIncludeNulls",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesIsMaxValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesIsMinValueExclusive",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesMaxValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesMinValue",
+          "type": "Decimal",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "TotalSamplesRangeType",
+          "type": "Int32",
+          "required": false,
+          "comments": "Values: 1 - 9 (1 - Between, 2 - NotBetween, 3 - EqualTo, 4 - NotEqualTo, 5 - GreaterThan, 6 - LessThan, 7 - GreaterThanEqual, 8 - LessThanEqual, 9 - Nulls"
+        },
+        {
+          "name": "TotalSamplesValues",
+          "type": "List<Decimal>",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "WorkOrderId",
+          "type": "List<String>",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ProcessInspectionXmlFile": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/ProcessInspectionXmlFile",
+      "params": [
+        {
+          "name": "Data",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ProcessInventoryXmlFile": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/ProcessInventoryXmlFile",
+      "params": [
+        {
+          "name": "Data",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ProcessProjectXmlFile": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/ProcessProjectXmlFile",
+      "params": [
+        {
+          "name": "Data",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "ProcessRecommendedWorkCsvFile": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/ProcessRecommendedWorkCsvFile",
+      "params": [
+        {
+          "name": "Data",
+          "type": "String",
+          "required": true,
+          "comments": ""
+        },
+        {
+          "name": "Delimiter",
+          "type": "String",
+          "required": true,
+          "comments": "defaults to comma"
+        }
+      ]
+    },
+    "ProcessRecommendedWorkXmlFile": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/ProcessRecommendedWorkXmlFile",
+      "params": [
+        {
+          "name": "Data",
+          "type": "String",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    },
+    "TemplateMapping": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/General/PavementManagementInterface/TemplateMapping",
+      "params": [
+        {
+          "name": "IncludeGlobalMR",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeLayerMR",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeLocalMR",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        },
+        {
+          "name": "IncludeMajorMR",
+          "type": "Boolean",
+          "required": false,
+          "comments": ""
+        }
+      ]
+    }
+  }
+}
