@@ -11,6 +11,9 @@ Ruby gem wrapping the Cityworks api.
 * Automatic handling of DateTime coercion so you can just pass normal ruby datetimes when making requests (need to implement for responses probably also)
 * Discoverability of the CW API endpoints/parameters, I.e. if you want to view the parameters for creating a service request, (types, comments, required params, etc), just do `puts Cityworks::Ams::ServiceRequest::Create::Parameters.all` - or for services/endpoints themselves, just `puts Cityworks::Ams.constants Cityworks::Ams::ServiceRequest.constants`, etc
 
+## Sponsors
+Development of this gem was sponsored by [Altertech Solutions](https://altertech.solutions/) check them out if you have any Cityworks implementation/consulting/development needs
+
 ## Installation
 
 Add this line to your application's Gemfile:
