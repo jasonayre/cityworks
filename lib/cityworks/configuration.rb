@@ -1,6 +1,7 @@
 module Cityworks
   class Configuration
-    attr_accessor :username, :password, :token, :services_url, :raise_on_response_errors
+    attr_accessor :username, :password, :token, :services_url, :raise_on_response_errors,
+                  :middlewares
 
     def initialize(
       username: ENV['CITYWORKS_USERNAME'],
@@ -14,6 +15,7 @@ module Cityworks
       @token = token
       @services_url = services_url
       @raise_on_response_errors = raise_on_response_errors
+      @middlewares = []
     end
   end
 end

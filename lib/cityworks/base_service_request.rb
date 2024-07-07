@@ -24,8 +24,13 @@ module Cityworks
       raise "Failed to parse response from #{endpoint_url}"
     end
 
-    def execute!
-      response = client.authorized_request(:get, endpoint_url, data: params.prepared.to_json)
+    def execute!(method: :post)
+      response = client.authorized_request(method, endpoint_url, data: params.prepared.to_json)
+
+      if(!response.success?)
+        raise Cityworks::ApiError, "API ERROR: Status: #{response.status}, Body: #{response.body}"
+      end
+
       response_message = self.class.response_klass.new(response)
 
       if !response_message.success?

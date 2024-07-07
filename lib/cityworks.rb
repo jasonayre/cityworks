@@ -3,6 +3,7 @@ require "active_support/all"
 require 'active_support/core_ext/string/inflections'
 require 'faraday'
 require 'json'
+require 'cityworks/middlewares/request_logger_middleware'
 require 'cityworks/parameters'
 require 'cityworks/request_parameters'
 require 'cityworks/client'

@@ -1,18 +1,18 @@
+require 'delegate'
 require 'json'
 
 module Cityworks
-  class BaseResponse
+  class BaseResponse < SimpleDelegator
     attr_reader :raw_response, :data
 
     def initialize(raw_response)
       @raw_response = raw_response
-
-      # Parse or initialize an empty hash if the response is blank. WHYYYY THOUGH
-      @data = parse_response(@raw_response)
+      @data = parse_response(@raw_response.body)
+      super(@data['Value'] || {})
     end
 
     def [](key)
-      data.dig('Value', key)
+      @data.key?(key) ? @data[key] : super(key)
     end
 
     def errors
@@ -20,7 +20,7 @@ module Cityworks
     end
 
     def full_errors
-      data["ErrorMessages"]
+      @data["ErrorMessages"] || []
     end
 
     def raw
@@ -28,19 +28,19 @@ module Cityworks
     end
 
     def success?
-      !is_blank_hash? && data["Status"] == 0
+      !is_blank_hash? && @data["Status"] == 0
     end
 
-    #lol that this is even a thing, but some endpoints return blank objects and or strings
     def is_blank_hash?
-      data && data.keys.length == 0
+      @data.empty?
     end
 
+    #because CW responds with a Status field and that is one of their core response fields, only return the contents of value
+    #best practice would be to unwrap this way for now
     def to_hash
-      h = @data.without("Value")
+      # h = @data.without("Value", "SuccessMessages", "ErrorMessages", "Message", "WarningMessages")
       {
-        **@data["Value"],
-        **h
+        **@data["Value"]
       }
     end
 
@@ -53,7 +53,8 @@ module Cityworks
         {}
       else
         begin
-          JSON.parse(response)
+          result = JSON.parse(response)
+
         rescue JSON::ParserError
           {}
         end

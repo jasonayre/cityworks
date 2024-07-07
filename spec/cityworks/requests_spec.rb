@@ -68,6 +68,8 @@ RSpec.describe Cityworks, :skip => !ENV["CITYWORKS_USERNAME"] do
         expect(problem_sid).to be_an(Integer)
       end
 
+      #rq = Dig::RequestTemplates::Cityworks::CreateServiceRequestFromTicket.first
+
       context "creates service request" do
         let(:service_request) {
           ::Cityworks::Ams::ServiceRequest::Create.new(
@@ -76,7 +78,9 @@ RSpec.describe Cityworks, :skip => !ENV["CITYWORKS_USERNAME"] do
               Date1: DateTime.now,
               X: 1234.00,
               Y: 1234.00,
-              Comments: "TEST DATA: CITYWORKS GEM INTEGRATION TEST"
+              Details: "Ticket: A241360267 Rev: 00A Created: 2024-05-15 16:38:53 UTC User: COREY MAHER Chan: 100\nWork Start: 2024-05-17 15:00:00 UTC Legal Start: 2024-05-17 15:00:00 UTC Expires: 2024-05-18 00:01:00 UTC\nResponse Required: true Priority: SHRT\n1 Year: false Boring: false Street/Sidewalk: false Vacuum: false Explosives: false PavementOnly: false\nWorkType: GRADING FOR NEW CONST WorkFor: SUPER GREEN BUILDERS",
+              Comments: "\nRemarksRequired: \nExcavatorProvided: \nMembers: MBR001MBR020MBR039LONGMBR058MBR153MBR172MBR191LONGMBR210MBR324MBR343LONGMBR362MBR077MBR096MBR115LONGMBR134MBR229MBR248MBR267LONGMBR286\nJob/Work order: AB123456\nPermit: 123456789ABC\nMap Link: https://somelink.doamin.com/linkinformationhereandthiscouldbealongstring\n\n12345 MAIN ST, CARSON 90745",
+              # Comments: "TEST DATA: CITYWORKS GEM INTEGRATION TEST",
             },
             client: client
           ).execute

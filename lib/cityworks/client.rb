@@ -10,6 +10,8 @@ module Cityworks
       @token = token || ::Cityworks&.config&.token
 
       @connection = Faraday.new(url: @services_url) do |faraday|
+        ### todo: make middlewares configurable
+        faraday.use Cityworks::Middlewares::RequestLoggerMiddleware
         faraday.request :json
         faraday.response :json
         faraday.adapter Faraday.default_adapter
@@ -23,10 +25,14 @@ module Cityworks
         req.params['data'] = { LoginName: username, Password: password }.to_json
       end
 
-      if response.status == 200
+      if response.status == 200 && response.body["Status"] < 1
         body = response.body
+        puts body.inspect
         @token = body.dig('Value', 'Token')
+        puts "TOKEN IS"
+        puts @token
       else
+        puts response.inspect
         raise "Authentication failed: #{response.body}"
       end
     end
@@ -36,10 +42,33 @@ module Cityworks
 
       response = @connection.send(method, path) do |req|
         req.headers['Authorization'] = "cityworks #{@token}"
+        # req.headers['Content-Type'] = 'application/json'
         req.params = params
+        # req.body = params
+        # puts "PARAMS ARE"
+        # puts params.inspect
+        # puts "ENCODED PARAMS ARE"
+        # puts URI.encode_www_form(params)
+        #
+        # req.body = URI.encode_www_form({
+        #   "data": {
+        #     "ProblemSid": 22268
+        #   }
+        # }.as_json)
+        #
+        # puts "REQUEST IS"
+        # puts req.body
+        # puts req
+        # req.body = {
+        #   :data => params[:data]
+        #
+        # }.to_json
+        # req.body = {
+        #   :data => params[:data]
+        # }.as_json
       end
 
-      response.body
+      response
     end
 
     def [](key)
