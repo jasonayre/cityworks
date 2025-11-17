@@ -1,0 +1,99 @@
+{
+  "Case": {
+    "CreateCaObjectItem": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Case/CreateCaObjectItem",
+      "params": [
+        {
+          "name": "CaseType",
+          "type": "String",
+          "required": true,
+          "comments": "The type of case to create"
+        },
+        {
+          "name": "CaseStatus",
+          "type": "String",
+          "required": false,
+          "comments": "Initial status of the case"
+        },
+        {
+          "name": "Location",
+          "type": "String",
+          "required": false,
+          "comments": "Location of the case"
+        },
+        {
+          "name": "CreatedByLoginId",
+          "type": "String",
+          "required": true,
+          "comments": "Login ID of the user creating the case"
+        },
+        {
+          "name": "CaseName",
+          "type": "String",
+          "required": false,
+          "comments": "Descriptive name for the case"
+        }
+      ]
+    },
+    "CreateChildCaObjectItem": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Case/CreateChildCaObjectItem",
+      "params": [
+        {
+          "name": "ParentCaObjectId",
+          "type": "Int64",
+          "required": true,
+          "comments": "ID of the parent case"
+        },
+        {
+          "name": "CaseType",
+          "type": "String",
+          "required": true,
+          "comments": "Type of child case"
+        }
+      ]
+    },
+    "CreateFromIntakeList": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Case/CreateFromIntakeList",
+      "params": [
+        {
+          "name": "CaObjectItems",
+          "type": "List<CaObjectItem>",
+          "required": true,
+          "comments": "List of intake case objects to create"
+        }
+      ]
+    },
+    "CreateFromWorkOrderCaObjectItem": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Case/CreateFromWorkOrderCaObjectItem",
+      "params": [
+        {
+          "name": "WorkOrderId",
+          "type": "Int64",
+          "required": true,
+          "comments": "Associated Work Order ID"
+        },
+        {
+          "name": "WorkOrderDesc",
+          "type": "String",
+          "required": false,
+          "comments": "Optional work order description"
+        }
+      ]
+    },
+    "GetDefaultItems": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Case/GetDefaultItems",
+      "params": []
+    },
+    "GetDefaultItemsList": {
+      "url": "https://{{DOMAIN}}/{{INSTALL_PATH}}/services/Pll/Case/GetDefaultItemsList",
+      "params": [
+        {
+          "name": "CaseTypeId",
+          "type": "Int64",
+          "required": true,
+          "comments": "The ID of the case type to fetch default items for"
+        }
+      ]
+    }
+  }
+}

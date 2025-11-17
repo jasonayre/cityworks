@@ -2,18 +2,30 @@ module Cityworks
   class Client
     attr_accessor :token, :services_url, :id
 
-    def initialize(username: nil, password: nil, token: nil, services_url: nil, id: nil)
+    def initialize(username: nil, password: nil, token: nil, services_url: nil, id: nil, proxy: nil, proxy_ssl_verify: true, proxy_ssl_ca_file: nil)
       @id = id
       @services_url = services_url || ::Cityworks&.config&.services_url || 'http://localhost/cityworks/services/'
       @username = username || ::Cityworks&.config&.username unless token
       @password = password || ::Cityworks&.config&.password unless token
       @token = token || ::Cityworks&.config&.token
+      @proxy = proxy
+      @proxy_ssl_verify = proxy_ssl_verify
+      @proxy_ssl_ca_file = proxy_ssl_ca_file
 
       @connection = Faraday.new(url: @services_url) do |faraday|
         ### todo: make middlewares configurable
         faraday.use Cityworks::Middlewares::RequestLoggerMiddleware
         faraday.request :json
         faraday.response :json
+
+        # Configure proxy if provided
+        faraday.ssl.verify = @proxy_ssl_verify if @proxy && !@proxy_ssl_ca_file
+        faraday.proxy = @proxy if @proxy
+
+        # Note: For HTTPS proxies, Faraday doesn't support custom CA certs directly
+        # SSL verification is handled at the system level
+        # For self-signed proxy certs, you may need to disable verification
+
         faraday.adapter Faraday.default_adapter
       end
 
